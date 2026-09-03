@@ -1,0 +1,245 @@
+.people-working {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.people-working__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.people-working__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.people-working__title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1a472a;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.people-working__subtitle {
+  font-size: 18px;
+  color: #2d8f4e;
+  font-weight: 500;
+}
+
+.people-working__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.people-working__card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 45px 30px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e8f5e9;
+}
+
+.people-working__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.people-working__card-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+  background-color: #e8f5e9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e5c36;
+}
+
+.people-working__card-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.people-working__card-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1a472a;
+  margin-bottom: 15px;
+}
+
+.people-working__card-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.people-working__card-button {
+  background-color: #1e5c36;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.people-working__card-button:hover {
+  background-color: #1a472a;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .people-working {
+    padding: 60px 0;
+  }
+  
+  .people-working__title {
+    font-size: 32px;
+  }
+  
+  .people-working__subtitle {
+    font-size: 16px;
+  }
+  
+  .people-working__grid {
+    gap: 25px;
+  }
+  
+  .people-working__card {
+    padding: 35px 25px;
+  }
+  
+  .people-working__card-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .people-working__card-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .people-working__card-title {
+    font-size: 20px;
+  }
+  
+  .people-working__card-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .people-working {
+    padding: 50px 0;
+  }
+  
+  .people-working__container {
+    padding: 0 15px;
+  }
+  
+  .people-working__header {
+    margin-bottom: 40px;
+  }
+  
+  .people-working__title {
+    font-size: 28px;
+  }
+  
+  .people-working__subtitle {
+    font-size: 15px;
+  }
+  
+  .people-working__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .people-working__card {
+    padding: 30px 20px;
+  }
+  
+  .people-working__card-icon {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 15px;
+  }
+  
+  .people-working__card-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .people-working__card-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .people-working__card-description {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  
+  .people-working__card-button {
+    padding: 10px 25px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .people-working {
+    padding: 40px 0;
+  }
+  
+  .people-working__title {
+    font-size: 24px;
+  }
+  
+  .people-working__subtitle {
+    font-size: 14px;
+  }
+  
+  .people-working__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .people-working__card {
+    padding: 25px 20px;
+  }
+  
+  .people-working__card-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .people-working__card-icon svg {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .people-working__card-title {
+    font-size: 18px;
+  }
+  
+  .people-working__card-description {
+    font-size: 13px;
+  }
+  
+  .people-working__card-button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,73 @@
+.not-found {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #f8fdf9;
+}
+
+.not-found__content {
+  max-width: 500px;
+}
+
+.not-found__icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.not-found__title {
+  font-size: 6rem;
+  font-weight: 800;
+  color: #1B8652;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.not-found__subtitle {
+  font-size: 1.75rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.not-found__description {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.not-found__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.not-found__btn-home {
+  background: #1B8652;
+  color: #fff;
+  padding: 0.85rem 2rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.not-found__btn-home:hover {
+  background: #125a3d;
+}
+
+.not-found__btn-service {
+  color: #1B8652;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.not-found__btn-service:hover {
+  color: #125a3d;
+}

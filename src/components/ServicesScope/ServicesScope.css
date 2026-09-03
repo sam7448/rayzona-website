@@ -1,0 +1,261 @@
+.services-scope {
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+.services-scope__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.services-scope__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services-scope__badge {
+  display: inline-block;
+  background: transparent;
+  color: #258116;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+}
+
+.services-scope__title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.services-scope__subtitle {
+  font-size: clamp(14px, 2vw, 18px);
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.services-scope__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.services-scope__card {
+  background: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.services-scope__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.services-scope__card-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.services-scope__card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.services-scope__card:hover .services-scope__card-image img {
+  transform: scale(1.1);
+}
+
+.services-scope__card-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 100%);
+}
+
+.services-scope__card-icon-wrapper {
+  position: absolute;
+  background-color: #ffae00;
+  bottom: 0px;
+  left: 25px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 2;
+  padding: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.services-scope__card:hover .services-scope__card-icon-wrapper {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.services-scope__card-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: white;
+  flex-shrink: 0;
+}
+
+.services-scope__card-title-overlay {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.services-scope__card-content {
+  padding: 25px 15px;
+}
+
+.services-scope__card-description {
+  font-size: 15px;
+  color: #000;
+  line-height: 1.7;
+  margin: 0 0 20px 0;
+  padding: 10px;
+}
+
+.services-scope__card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  background: linear-gradient(to bottom, #1B8652 0%, #197A51 25%, #156950 50%, #125A4F 75%, #0E4B4E 100%);
+}
+
+.services-scope__card-link svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.services-scope__card-link:hover {
+  color: #fff;
+}
+
+.services-scope__card-link:hover svg {
+  transform: translateX(5px);
+}
+
+@media (max-width: 1024px) {
+  .services-scope__container {
+    padding: 0 20px;
+  }
+
+  .services-scope__title {
+    font-size: 36px;
+  }
+
+  .services-scope__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .services-scope__card-image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-scope {
+    padding: 50px 15px;
+  }
+
+  .services-scope__header {
+    margin-bottom: 40px;
+  }
+
+  .services-scope__title {
+    font-size: 28px;
+  }
+
+  .services-scope__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .services-scope__card-image {
+    height: 180px;
+  }
+
+  .services-scope__card-content {
+    padding: 16px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-scope {
+    padding: 50px 10px;
+  }
+
+  .services-scope__title {
+    font-size: 28px;
+  }
+
+  .services-scope__card-image {
+    height: 180px;
+  }
+
+  .services-scope__card-icon-wrapper {
+    bottom: 10px;
+    left: 15px;
+    gap: 6px;
+    padding: 6px;
+  }
+
+  .services-scope__card-icon {
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+  }
+
+  .services-scope__card-title-overlay {
+    font-size: 16px;
+  }
+
+  .services-scope__card-content {
+    padding: 15px 0px;
+  }
+
+  .services-scope__card-description {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .services-scope__card-link {
+    font-size: 12px;
+    padding: 6px;
+  }
+}

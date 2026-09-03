@@ -1,0 +1,142 @@
+.stats {
+ background: linear-gradient(
+  to bottom,
+  #1B8652 0%,
+  #197A51 25%,
+  #156950 50%,
+  #125A4F 75%,
+  #0E4B4E 100%
+);
+  padding: 20px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.stats__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.stats__item {
+  text-align: center;
+  color: white;
+  animation: fadeInUp 0.6s ease-out;
+  transition: all 0.3s ease;
+}
+
+.stats__item:hover {
+  transform: translateY(-5px);
+}
+
+.stats__item:nth-child(1) { animation-delay: 0.1s; }
+.stats__item:nth-child(2) { animation-delay: 0.2s; }
+.stats__item:nth-child(3) { animation-delay: 0.3s; }
+.stats__item:nth-child(4) { animation-delay: 0.4s; }
+
+.stats__icon {
+  font-size: 52px;
+  color: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats__number {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+  line-height: 1;
+}
+
+.stats__label {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .stats__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .stats__icon {
+    font-size: 28px;
+  }
+
+  .stats__number {
+    font-size: 40px;
+  }
+
+  .stats__label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats {
+    padding: 60px 15px;
+  }
+
+  .stats__container {
+    gap: 20px;
+  }
+
+  .stats__icon {
+    font-size: 26px;
+  }
+
+  .stats__number {
+    font-size: 36px;
+  }
+
+  .stats__label {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats {
+    padding: 20px 15px;
+  }
+
+  .stats__container {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 20px;
+
+  }
+
+  .stats__icon {
+    font-size: 30px;
+  }
+
+  .stats__number {
+    font-size: 13px;
+  }
+
+  .stats__label {
+    font-size: 10px;
+  }
+}

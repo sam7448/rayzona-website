@@ -1,0 +1,312 @@
+.green-nav {
+  background-color: transparent;
+  position: relative;
+  top: -20px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* ── Desktop container ── */
+.green-nav__container {
+  background: linear-gradient(
+    to bottom,
+    #1B8652 0%,
+    #197A51 25%,
+    #156950 50%,
+    #125A4F 75%,
+    #0E4B4E 100%
+  );
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+/* ── Nav list ── */
+.green-nav__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* ── Nav link ── */
+.green-nav__link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 18px 14px;
+  transition: color 0.3s ease;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+}
+
+.green-nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 14px;
+  right: 14px;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.green-nav__link:hover::after,
+.green-nav__link--active::after {
+  width: calc(100% - 28px);
+}
+
+.green-nav__link:hover,
+.green-nav__link--active {
+  color: white;
+}
+
+/* ── Dropdown ── */
+.green-nav__dropdown-wrapper {
+  position: relative;
+}
+
+.green-nav__dropdown-trigger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: inherit;
+}
+
+.green-nav__chevron {
+  font-size: 10px;
+  transition: transform 0.25s ease;
+  margin-top: 1px;
+}
+
+.green-nav__chevron--open {
+  transform: rotate(180deg);
+}
+
+.green-nav__dropdown {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  min-width: 220px;
+  padding: 0.5rem 0;
+  list-style: none;
+  z-index: 2000;
+  border-top: 3px solid #1B8652;
+}
+
+.green-nav__dropdown-link {
+  display: block;
+  padding: 0.65rem 1.2rem;
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.green-nav__dropdown-link:hover {
+  background: #f0faf5;
+  color: #1B8652;
+}
+
+/* ── Mobile hamburger ── */
+.green-nav__mobile-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  gap: 5px;
+}
+
+.green-nav__mobile-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.green-nav__mobile-toggle--active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.green-nav__mobile-toggle--active span:nth-child(2) {
+  opacity: 0;
+}
+.green-nav__mobile-toggle--active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ══════════════════════════════════
+   RESPONSIVE — Tablet (≤992px)
+══════════════════════════════════ */
+@media (max-width: 992px) {
+  .green-nav__link {
+    font-size: 13px;
+    padding: 18px 10px;
+  }
+}
+
+/* ══════════════════════════════════
+   RESPONSIVE — Mobile (≤768px)
+══════════════════════════════════ */
+@media (max-width: 768px) {
+  .green-nav {
+    top: -15px;
+  }
+
+  .green-nav__container {
+    padding: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  /* Show hamburger */
+  .green-nav__mobile-toggle {
+    display: flex;
+    order: 1;
+    padding: 14px 16px;
+  }
+
+  /* Hide desktop list by default */
+  .green-nav__list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #1B5E3A;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 8px 0;
+    gap: 0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1500;
+  }
+
+  .green-nav__list--open {
+    display: flex;
+  }
+
+  /* Each nav item full width */
+  .green-nav__list > li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .green-nav__list > li:last-child {
+    border-bottom: none;
+  }
+
+  /* Nav links fill the row */
+  .green-nav__link {
+    padding: 14px 20px;
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .green-nav__link::after {
+    display: none;
+  }
+
+  /* Dropdown trigger in mobile */
+  .green-nav__dropdown-trigger {
+    width: 100%;
+    padding: 14px 20px;
+    justify-content: space-between;
+  }
+
+  /* Mobile services sub-menu */
+  .green-nav__dropdown {
+    position: static;
+    transform: none;
+    left: auto;
+    box-shadow: none;
+    border-radius: 0;
+    border-top: none;
+    border-left: 3px solid #a4d233;
+    background: rgba(0, 0, 0, 0.15);
+    min-width: 100%;
+    padding: 4px 0;
+    margin: 0;
+  }
+
+  .green-nav__dropdown-link {
+    color: rgba(255, 255, 255, 0.85);
+    padding: 10px 28px;
+    font-size: 0.85rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .green-nav__dropdown-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+  }
+
+  .green-nav__dropdown-link:last-child {
+    border-bottom: none;
+  }
+}
+
+/* ══════════════════════════════════
+   RESPONSIVE — Small mobile (≤480px)
+══════════════════════════════════ */
+@media (max-width: 480px) {
+  .green-nav {
+    top: -12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .green-nav__container {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .green-nav__mobile-toggle span {
+    width: 22px;
+    height: 2px;
+  }
+
+  .green-nav__link {
+    font-size: 13px;
+    padding: 13px 16px;
+  }
+
+  .green-nav__dropdown-trigger {
+    padding: 13px 16px;
+  }
+
+  .green-nav__dropdown-link {
+    padding: 10px 24px;
+    font-size: 0.82rem;
+  }
+}
