@@ -41,7 +41,7 @@ const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 const HomePage = () => (
   <>
     <Helmet>
-      <title>Solar Panel Installation in Pune | RAYZONA RENEWABLES ENERGY</title>
+      <title>RAYZONA RENEWABLES ENERGY</title>
       <meta name="description" content="RAYZONA RENEWABLES ENERGY — expert solar panel installation in Pune for homes, businesses & industries. Residential & commercial rooftop solar, EV charging & maintenance. Free site survey. Call +91 7448299293." />
       <meta name="keywords" content="solar panel installation Pune, solar company Pune, best solar company Pune, rooftop solar Pune, residential solar Pune, commercial solar Pune, solar EPC Pune, solar subsidy Pune" />
       <link rel="canonical" href={`${SITE_URL}/`} />
