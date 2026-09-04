@@ -1,8 +1,9 @@
-﻿import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
 import ServiceSchema from '../../seo/ServiceSchema';
+import evImg from '../../assets/images/AgriculturalSolarSystem.webp';
 
 const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 const WHATSAPP = '917448299293';
@@ -66,7 +67,7 @@ const EVCharging = () => {
             <p>Our EV charging installations cover housing societies, individual homes, office parking lots, hotels, commercial complexes, and fleet charging facilities across Hadapsar, Hinjewadi, Baner, Kharadi, Viman Nagar, and all of Pune.</p>
           </div>
           <div className="service-page__intro-image">
-            <img src="/src/assets/images/AgriculturalSolarSystem.webp" alt="EV charging station installation at home and office in Pune" loading="lazy" />
+            <img src={evImg} alt="EV charging station installation at home and office in Pune" loading="lazy" />
           </div>
         </div>
 

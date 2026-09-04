@@ -1,8 +1,9 @@
-﻿import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
 import ServiceSchema from '../../seo/ServiceSchema';
+import residentialImg from '../../assets/images/ResidentialSolar.webp';
 
 const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 const WHATSAPP = '917448299293';
@@ -66,7 +67,7 @@ const OnGridSolar = () => {
             <p>On-grid systems are eligible for the PM Surya Ghar Muft Bijli Yojana subsidy for residential customers in Pune — making them even more affordable.</p>
           </div>
           <div className="service-page__intro-image">
-            <img src="/src/assets/images/ResidentialSolar.webp" alt="On-grid solar system installed on rooftop in Pune with MSEDCL net metering" loading="lazy" />
+            <img src={residentialImg} alt="On-grid solar system installed on rooftop in Pune with MSEDCL net metering" loading="lazy" />
           </div>
         </div>
 

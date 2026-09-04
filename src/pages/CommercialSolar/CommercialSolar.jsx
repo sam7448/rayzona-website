@@ -1,9 +1,10 @@
-﻿import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
 import ServiceSchema from '../../seo/ServiceSchema';
 import { FaBuilding, FaIndustry, FaChartLine, FaRupeeSign, FaBolt, FaShieldAlt } from 'react-icons/fa';
+import commercialImg from '../../assets/images/CommercialSolar.webp';
 
 const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 const WHATSAPP = '917448299293';
@@ -67,7 +68,7 @@ const CommercialSolar = () => {
             <p>Our commercial solar installations include detailed energy audits, custom system design, MSEDCL commercial net metering, and long-term AMC support to ensure your investment delivers maximum returns.</p>
           </div>
           <div className="service-page__intro-image">
-            <img src="/src/assets/images/CommercialSolar.webp" alt="Commercial solar panel installation on office rooftop in Pune" loading="lazy" />
+            <img src={commercialImg} alt="Commercial solar panel installation on office rooftop in Pune" loading="lazy" />
           </div>
         </div>
 

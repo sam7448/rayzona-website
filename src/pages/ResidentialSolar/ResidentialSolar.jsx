@@ -1,9 +1,10 @@
-﻿import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
 import ServiceSchema from '../../seo/ServiceSchema';
 import { FaHome, FaSolarPanel, FaCheckCircle, FaRupeeSign, FaLeaf, FaShieldAlt } from 'react-icons/fa';
+import residentialImg from '../../assets/images/ResidentialSolar.webp';
 
 const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 const WHATSAPP = '917448299293';
@@ -66,7 +67,7 @@ const ResidentialSolar = () => {
             <p>Our residential installations include PM Surya Ghar Muft Bijli Yojana subsidy processing, MSEDCL net metering application, and 25-year panel performance warranty.</p>
           </div>
           <div className="service-page__intro-image">
-            <img src="/src/assets/images/ResidentialSolar.webp" alt="Residential rooftop solar installation on home in Pune" loading="lazy" />
+            <img src={residentialImg} alt="Residential rooftop solar installation on home in Pune" loading="lazy" />
           </div>
         </div>
 

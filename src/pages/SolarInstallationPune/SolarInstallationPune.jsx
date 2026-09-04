@@ -1,9 +1,10 @@
-﻿import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
 import ServiceSchema from '../../seo/ServiceSchema';
 import { FaSolarPanel, FaHome, FaBuilding, FaIndustry, FaCheckCircle, FaTools, FaPhoneAlt } from 'react-icons/fa';
+import residentialImg from '../../assets/images/ResidentialSolar.webp';
 
 const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 const WHATSAPP = '917448299293';
@@ -90,7 +91,7 @@ const SolarInstallationPune = () => {
             <p>Our installations serve customers across Pune, Pimpri-Chinchwad, Hinjewadi, Baner, Kothrud, Kharadi, Hadapsar, Viman Nagar, and all surrounding areas.</p>
           </div>
           <div className="service-page__intro-image">
-            <img src="/src/assets/images/ResidentialSolar.webp" alt="Solar panel installation on residential rooftop in Pune by Rayzona Renewables Energy" loading="lazy" />
+            <img src={residentialImg} alt="Solar panel installation on residential rooftop in Pune by Rayzona Renewables Energy" loading="lazy" />
           </div>
         </div>
 

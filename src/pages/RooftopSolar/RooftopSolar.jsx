@@ -1,8 +1,9 @@
-﻿import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
 import ServiceSchema from '../../seo/ServiceSchema';
+import rooftopImg from '../../assets/images/RooftopSolar.webp';
 
 const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 const WHATSAPP = '917448299293';
@@ -66,7 +67,7 @@ const RooftopSolar = () => {
             <p>We conduct free structural assessments to ensure your roof can safely support solar panels, and handle all documentation for subsidy and net metering approvals.</p>
           </div>
           <div className="service-page__intro-image">
-            <img src="/src/assets/images/RooftopSolar.webp" alt="Rooftop solar panel installation in Pune on residential and commercial building" loading="lazy" />
+            <img src={rooftopImg} alt="Rooftop solar panel installation in Pune on residential and commercial building" loading="lazy" />
           </div>
         </div>
 

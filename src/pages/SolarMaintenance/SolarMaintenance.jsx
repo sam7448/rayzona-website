@@ -1,8 +1,9 @@
-﻿import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
 import ServiceSchema from '../../seo/ServiceSchema';
+import commercialImg from '../../assets/images/CommercialSolar.webp';
 
 const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 const WHATSAPP = '917448299293';
@@ -66,7 +67,7 @@ const SolarMaintenance = () => {
             <p>Rayzona offers flexible Annual Maintenance Contracts (AMC) for residential and commercial solar systems across all of Pune, including Hadapsar, Hinjewadi, Baner, Kothrud, and Pimpri-Chinchwad.</p>
           </div>
           <div className="service-page__intro-image">
-            <img src="/src/assets/images/CommercialSolar.webp" alt="Solar panel maintenance and cleaning service in Pune by Rayzona technician" loading="lazy" />
+            <img src={commercialImg} alt="Solar panel maintenance and cleaning service in Pune by Rayzona technician" loading="lazy" />
           </div>
         </div>
 
