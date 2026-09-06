@@ -3,10 +3,18 @@ import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
 import ServiceSchema from '../../seo/ServiceSchema';
+import FAQSchema from '../../seo/FAQSchema';
 import residentialImg from '../../assets/images/ResidentialSolar.webp';
 
 const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 const WHATSAPP = '917448299293';
+
+const faqs = [
+  { q: 'How does on-grid solar net metering work in Pune?', a: 'With MSEDCL net metering, a bi-directional meter measures how much electricity your solar system exports to the grid vs how much you import. At the end of the billing cycle, you pay only for the net units consumed. If you export more than you import, the excess is carried forward as credit.' },
+  { q: 'What is the on-grid solar subsidy in Pune?', a: 'Residential customers in Pune can get a central government subsidy of ₹30,000 for a 1 kW system, ₹60,000 for 2 kW, and ₹78,000 for 3 kW under PM Surya Ghar Muft Bijli Yojana. Rayzona handles the complete subsidy registration and claim process.' },
+  { q: 'What happens during a power cut with an on-grid solar system?', a: 'On-grid systems automatically shut down during power outages — this is a safety requirement to protect MSEDCL linemen. If you need power during outages, a hybrid solar system with battery backup is the right choice.' },
+  { q: 'How many units does a 3 kW on-grid solar system generate in Pune?', a: 'In Pune, a 3 kW on-grid solar system generates approximately 350–420 units of electricity per month on average, accounting for seasonal variation. This is enough for most residential consumers.' },
+];
 
 const OnGridSolar = () => {
   const handleWhatsApp = (msg) => {
@@ -35,6 +43,7 @@ const OnGridSolar = () => {
         description="Grid-connected on-grid solar system installation with MSEDCL net metering for residential and commercial properties in Pune."
         url={`${SITE_URL}/on-grid-solar`}
       />
+      <FAQSchema items={faqs} />
 
       <section className="service-page__hero">
         <div className="service-page__hero-inner">
@@ -74,12 +83,7 @@ const OnGridSolar = () => {
         <div className="service-page__faq">
           <h2 className="service-page__section-title">FAQ — On-Grid Solar in Pune</h2>
           <div className="service-page__faq-list">
-            {[
-              { q: 'How does on-grid solar net metering work in Pune?', a: 'With MSEDCL net metering, a bi-directional meter measures how much electricity your solar system exports to the grid vs how much you import. At the end of the billing cycle, you pay only for the net units consumed. If you export more than you import, the excess is carried forward as credit.' },
-              { q: 'What is the on-grid solar subsidy in Pune?', a: 'Residential customers in Pune can get a central government subsidy of ₹30,000 for a 1 kW system, ₹60,000 for 2 kW, and ₹78,000 for 3 kW under PM Surya Ghar Muft Bijli Yojana. Rayzona handles the complete subsidy registration and claim process.' },
-              { q: 'What happens during a power cut with an on-grid solar system?', a: 'On-grid systems automatically shut down during power outages — this is a safety requirement to protect MSEDCL linemen. If you need power during outages, a hybrid solar system with battery backup is the right choice.' },
-              { q: 'How many units does a 3 kW on-grid solar system generate in Pune?', a: 'In Pune, a 3 kW on-grid solar system generates approximately 350–420 units of electricity per month on average, accounting for seasonal variation. This is enough for most residential consumers.' },
-            ].map((f, i) => (
+            {faqs.map((f, i) => (
               <div key={i} className="service-page__faq-item">
                 <h3>{f.q}</h3>
                 <p>{f.a}</p>

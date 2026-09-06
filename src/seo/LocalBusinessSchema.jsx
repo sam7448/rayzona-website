@@ -1,18 +1,21 @@
-﻿const LocalBusinessSchema = () => {
+const LocalBusinessSchema = () => {
   const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "ProfessionalService", "HomeAndConstructionBusiness"],
         "@id": `${SITE_URL}/#business`,
         "name": "RAYZONA RENEWABLES ENERGY",
         "alternateName": "Rayzona Energy",
-        "description": "RAYZONA RENEWABLES ENERGY is a solar panel installation company in Pune, Maharashtra providing residential, commercial, and industrial solar solutions, EV charging stations, solar maintenance, and on-grid solar systems with net metering.",
+        "description": "RAYZONA RENEWABLES ENERGY is a certified solar EPC and solar panel installation company in Hadapsar, Pune, Maharashtra providing residential, commercial, and industrial rooftop solar solutions, EV charging stations, solar maintenance, and on-grid solar systems with MSEDCL net metering.",
         "url": SITE_URL,
+        "image": `${SITE_URL}/og-image.jpg`,
+        "logo": `${SITE_URL}/logo.png`,
         "telephone": ["+91-7448299293", "+91-7499802124"],
         "email": "rayzonarenewablesenergy@gmail.com",
+        "hasMap": "https://maps.google.com/?q=Phadtare+Niwas+Akshay+Terrace+Gadital+Hadapsar+Pune",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Phadtare Niwas, next to Akshay Terrace, Gadital Hadapsar",
@@ -42,7 +45,34 @@
         "paymentAccepted": "Cash, Bank Transfer, EMI, UPI",
         "areaServed": [
           { "@type": "City", "name": "Pune" },
-          { "@type": "City", "name": "Pimpri-Chinchwad" }
+          { "@type": "City", "name": "Pimpri-Chinchwad" },
+          { "@type": "Place", "name": "Hadapsar" },
+          { "@type": "Place", "name": "Hinjewadi" },
+          { "@type": "Place", "name": "Baner" },
+          { "@type": "Place", "name": "Kothrud" },
+          { "@type": "Place", "name": "Kharadi" },
+          { "@type": "Place", "name": "Viman Nagar" },
+          { "@type": "Place", "name": "Wakad" },
+          { "@type": "Place", "name": "Aundh" },
+          { "@type": "Place", "name": "Bavdhan" },
+          { "@type": "Place", "name": "Magarpatta" },
+          { "@type": "Place", "name": "Balewadi" },
+          { "@type": "Place", "name": "Bhosari" },
+          { "@type": "Place", "name": "Moshi" },
+          { "@type": "Place", "name": "Talegaon" }
+        ],
+        "knowsAbout": [
+          "Solar Panel Installation",
+          "Rooftop Solar in Pune",
+          "Residential Solar Power Systems",
+          "Commercial Solar Panels",
+          "Industrial Solar Power Plants",
+          "On-Grid Solar Systems",
+          "MSEDCL Net Metering Process",
+          "PM Surya Ghar Muft Bijli Yojana Subsidy",
+          "EV Charging Station Installation",
+          "Solar AMC and Maintenance Services",
+          "Solar Inverter and Battery Systems"
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",

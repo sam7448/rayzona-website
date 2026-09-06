@@ -1,4 +1,4 @@
-﻿import './App.css';
+import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 
@@ -41,13 +41,20 @@ const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 const HomePage = () => (
   <>
     <Helmet>
-      <title>RAYZONA RENEWABLES ENERGY</title>
+      <title>RAYZONA RENEWABLES ENERGY | Solar Panel Installation in Pune</title>
       <meta name="description" content="RAYZONA RENEWABLES ENERGY — expert solar panel installation in Pune for homes, businesses & industries. Residential & commercial rooftop solar, EV charging & maintenance. Free site survey. Call +91 7448299293." />
-      <meta name="keywords" content="solar panel installation Pune, solar company Pune, best solar company Pune, rooftop solar Pune, residential solar Pune, commercial solar Pune, solar EPC Pune, solar subsidy Pune" />
+      <meta name="keywords" content="solar panel installation Pune, solar company Pune, best solar company Pune, rooftop solar Pune, residential solar Pune, commercial solar Pune, solar EPC Pune, solar subsidy Pune, PM Surya Ghar Pune" />
       <link rel="canonical" href={`${SITE_URL}/`} />
+      <meta property="og:type" content="website" />
       <meta property="og:url" content={`${SITE_URL}/`} />
-      <meta property="og:title" content="Solar Panel Installation in Pune | RAYZONA RENEWABLES ENERGY" />
+      <meta property="og:site_name" content="RAYZONA RENEWABLES ENERGY" />
+      <meta property="og:title" content="RAYZONA RENEWABLES ENERGY | Solar Panel Installation in Pune" />
       <meta property="og:description" content="Expert solar panel installation in Pune for homes & businesses. Reduce bills by 90%. Free site survey. Call +91 7448299293." />
+      <meta property="og:image" content={`${SITE_URL}/og-image.jpg`} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="RAYZONA RENEWABLES ENERGY | Solar Panel Installation in Pune" />
+      <meta name="twitter:description" content="Expert solar panel installation in Pune for homes & businesses. Reduce bills by 90%. Call +91 7448299293." />
+      <meta name="twitter:image" content={`${SITE_URL}/og-image.jpg`} />
     </Helmet>
     <WebsiteSchema />
     <LocalBusinessSchema />

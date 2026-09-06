@@ -1,5 +1,5 @@
-const FAQSchema = () => {
-  const faqs = [
+const FAQSchema = ({ items }) => {
+  const defaultFaqs = [
     {
       question: 'What partner models does Rayzona provide?',
       answer: 'Rayzona provides Distributor, Master Distributor and Channel Partner Franchise models. The Distributor model is the basic model, the Master Distributor model is the bigger growth model, and the Channel Partner Franchise model is the premium franchise-style model.'
@@ -30,15 +30,17 @@ const FAQSchema = () => {
     }
   ];
 
+  const source = items && items.length > 0 ? items : defaultFaqs;
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": faqs.map((faq) => ({
+    "mainEntity": source.map((faq) => ({
       "@type": "Question",
-      "name": faq.question,
+      "name": faq.question || faq.q,
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": faq.answer
+        "text": faq.answer || faq.a
       }
     }))
   };

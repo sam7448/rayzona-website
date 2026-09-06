@@ -3,10 +3,18 @@ import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
 import ServiceSchema from '../../seo/ServiceSchema';
+import FAQSchema from '../../seo/FAQSchema';
 import evImg from '../../assets/images/AgriculturalSolarSystem.webp';
 
 const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 const WHATSAPP = '917448299293';
+
+const faqs = [
+  { q: 'How much does EV charging station installation cost in Pune?', a: 'Home EV charger installation (AC, Level 2) in Pune typically costs ₹8,000–₹20,000 for the charger and installation. Commercial DC fast chargers are more expensive. Rayzona provides transparent quotes based on your specific requirements.' },
+  { q: 'Can I charge my EV from my solar panels in Pune?', a: 'Yes. A solar-integrated EV charging system uses energy from your rooftop solar panels to charge your electric vehicle — essentially giving you "free" fuel from sunshine. This is one of the most sustainable and cost-effective options for Pune EV owners.' },
+  { q: 'What type of EV charger is best for home use in Pune?', a: 'For most Pune homeowners, a 7.4 kW AC Type-2 home charger is ideal. It can fully charge a typical electric car overnight. If you have solar panels, we pair the charger with your solar system for maximum savings.' },
+  { q: 'Can EV charging stations be installed in housing societies in Pune?', a: 'Yes. Rayzona specialises in multi-point EV charging installations for cooperative housing societies in Pune. We design systems for shared parking areas, basements, and open car parks — with individual metering for each resident.' },
+];
 
 const EVCharging = () => {
   const handleWhatsApp = (msg) => {
@@ -35,6 +43,7 @@ const EVCharging = () => {
         description="EV charging station installation for homes, offices, apartments, and commercial complexes in Pune. Solar-powered EV charging solutions for sustainable mobility."
         url={`${SITE_URL}/ev-charging`}
       />
+      <FAQSchema items={faqs} />
 
       <section className="service-page__hero">
         <div className="service-page__hero-inner">
@@ -74,12 +83,7 @@ const EVCharging = () => {
         <div className="service-page__faq">
           <h2 className="service-page__section-title">FAQ — EV Charging in Pune</h2>
           <div className="service-page__faq-list">
-            {[
-              { q: 'How much does EV charging station installation cost in Pune?', a: 'Home EV charger installation (AC, Level 2) in Pune typically costs ₹8,000–₹20,000 for the charger and installation. Commercial DC fast chargers are more expensive. Rayzona provides transparent quotes based on your specific requirements.' },
-              { q: 'Can I charge my EV from my solar panels in Pune?', a: 'Yes. A solar-integrated EV charging system uses energy from your rooftop solar panels to charge your electric vehicle — essentially giving you "free" fuel from sunshine. This is one of the most sustainable and cost-effective options for Pune EV owners.' },
-              { q: 'What type of EV charger is best for home use in Pune?', a: 'For most Pune homeowners, a 7.4 kW AC Type-2 home charger is ideal. It can fully charge a typical electric car overnight. If you have solar panels, we pair the charger with your solar system for maximum savings.' },
-              { q: 'Can EV charging stations be installed in housing societies in Pune?', a: 'Yes. Rayzona specialises in multi-point EV charging installations for cooperative housing societies in Pune. We design systems for shared parking areas, basements, and open car parks — with individual metering for each resident.' },
-            ].map((f, i) => (
+            {faqs.map((f, i) => (
               <div key={i} className="service-page__faq-item">
                 <h3>{f.q}</h3>
                 <p>{f.a}</p>

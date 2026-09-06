@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
 import ServiceSchema from '../../seo/ServiceSchema';
+import FAQSchema from '../../seo/FAQSchema';
 import { FaSolarPanel, FaHome, FaBuilding, FaIndustry, FaCheckCircle, FaTools, FaPhoneAlt } from 'react-icons/fa';
 import residentialImg from '../../assets/images/ResidentialSolar.webp';
 
@@ -58,6 +59,7 @@ const SolarInstallationPune = () => {
         description="Expert residential, commercial, and industrial solar panel installation across Pune and Maharashtra. Includes site survey, system design, installation, net metering, and subsidy guidance."
         url={`${SITE_URL}/solar-installation-pune`}
       />
+      <FAQSchema items={faqs} />
 
       {/* Hero */}
       <section className="service-page__hero">
