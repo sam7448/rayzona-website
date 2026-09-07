@@ -11,13 +11,16 @@ import Footer from './components/Footer/Footer';
 import GreenHero from './components/GreenHero/GreenHero';
 import Stats from './components/Stats/Stats';
 import About from './components/About/About';
+import BrandLogos from './components/BrandLogos/BrandLogos';
 import SolarSolutions from './components/SolarSolutions/SolarSolutions';
 import ServicesScope from './components/ServicesScope/ServicesScope';
 import SolarCalculator from './components/SolarCalculator/SolarCalculator';
+import Testimonials from './components/Testimonials/Testimonials';
 import ApplyNow from './components/ApplyNow/ApplyNow';
 import FAQs from './components/FAQs/FAQs';
 import CTA from './components/CTA/CTA';
 import ServiceAreas from './components/ServiceAreas/ServiceAreas';
+import FloatingActions from './components/FloatingActions/FloatingActions';
 
 // Pages
 import ProductsServices from './pages/ProductsServices/ProductsServices';
@@ -64,9 +67,11 @@ const HomePage = () => (
     <GreenHero />
     <Stats />
     <About />
+    <BrandLogos />
     <SolarSolutions />
     <SolarCalculator />
     <ServicesScope />
+    <Testimonials />
     <ApplyNow />
     <ServiceAreas />
     <FAQs />
@@ -106,6 +111,7 @@ function App() {
             </Routes>
           </main>
           <Footer />
+          <FloatingActions />
         </div>
       </Router>
     </HelmetProvider>
