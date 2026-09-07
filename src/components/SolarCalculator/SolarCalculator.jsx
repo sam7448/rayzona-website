@@ -11,11 +11,12 @@ import {
   FaCheckCircle, 
   FaClock, 
   FaHome,
-  FaArrowRight
+  FaArrowRight,
+  FaGift
 } from 'react-icons/fa';
 import './SolarCalculator.css';
 
-const SolarCalculator = ({ title, subtitle, showFullPageLink = false }) => {
+const SolarCalculator = ({ title, subtitle }) => {
   const [calcMode, setCalcMode] = useState('bill'); // 'bill' or 'capacity'
   const [monthlyBill, setMonthlyBill] = useState(3500);
   const [systemKw, setSystemKw] = useState(3);
@@ -50,19 +51,7 @@ const SolarCalculator = ({ title, subtitle, showFullPageLink = false }) => {
     return 78000; // 3 kW+ capped at ₹78,000
   };
 
-  // Estimated gross turnkey cost (Mono PERC / TopCon panels, branded on-grid inverter, structure, net-metering, installation)
-  const getGrossCost = (capacity) => {
-    if (capacity === 1) return 70000;
-    if (capacity === 2) return 135000;
-    if (capacity === 3) return 190000;
-    if (capacity === 4) return 245000;
-    if (capacity === 5) return 300000;
-    return Math.round(capacity * 58000);
-  };
-
   const subsidy = getSubsidy(kw);
-  const grossCost = getGrossCost(kw);
-  const netCost = Math.max(0, grossCost - subsidy);
 
   // Generation & Savings metrics (Pune average ~4.2 units/kW/day)
   const monthlyUnits = Math.round(kw * 125);
@@ -70,14 +59,13 @@ const SolarCalculator = ({ title, subtitle, showFullPageLink = false }) => {
   const avgElectricityTariff = 8.5; // Avg MSEDCL residential slab rate ₹8.5 / unit
   const estimatedMonthlySavings = Math.round(monthlyUnits * avgElectricityTariff);
   const estimatedAnnualSavings = estimatedMonthlySavings * 12;
-  const lifetimeSavings25Yrs = (estimatedAnnualSavings * 25) - netCost;
-  const paybackYears = (netCost / estimatedAnnualSavings).toFixed(1);
+  const lifetimeSavings25Yrs = estimatedAnnualSavings * 25;
   const rooftopAreaSqFt = kw * 90; // ~90 sq.ft per kW
   const co2OffsetTonnes = (annualUnits * 0.82 / 1000).toFixed(1);
 
-  // WhatsApp click handler with prefilled details
+  // WhatsApp click handler with prefilled details (NO hardcoded prices)
   const handleWhatsAppBooking = () => {
-    const text = `Hi Rayzona Renewables Energy!\n\nI used your *PM Surya Ghar Solar Calculator*:\n• *System Size:* ${kw} kW Rooftop Solar\n• *Estimated Bill:* ₹${calcMode === 'bill' ? monthlyBill : Math.round(kw * 1400)}/month\n• *Total Cost:* ₹${grossCost.toLocaleString('en-IN')}\n• *Govt Subsidy:* ₹${subsidy.toLocaleString('en-IN')}\n• *Net Payable:* ₹${netCost.toLocaleString('en-IN')}\n• *Monthly Savings:* ~₹${estimatedMonthlySavings.toLocaleString('en-IN')}/mo\n\nI want to book a *Free Site Survey in Pune* and apply for the PM Surya Ghar subsidy with Rayzona. Please guide me!`;
+    const text = `Hi Rayzona Renewables Energy!\n\nI used your *PM Surya Ghar Solar Calculator*:\n• *Recommended System:* ${kw} kW Rooftop Solar\n• *Monthly Electricity Bill:* ₹${calcMode === 'bill' ? monthlyBill : Math.round(kw * 1400)}/month\n• *Eligible Central Subsidy:* ₹${subsidy.toLocaleString('en-IN')}\n• *Est. Monthly Generation:* ~${monthlyUnits} Units/mo\n• *Est. Monthly Savings:* ~₹${estimatedMonthlySavings.toLocaleString('en-IN')}/mo\n\nI want to get a *Custom Best-Price Quote* & book a *Free Site Survey in Pune*. Please assist me!`;
     const url = `https://wa.me/917448299293?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
   };
@@ -99,7 +87,7 @@ const SolarCalculator = ({ title, subtitle, showFullPageLink = false }) => {
             )}
           </h2>
           <p className="solar-calc__subtitle">
-            {subtitle || 'Find out how much you can save under PM Surya Ghar Muft Bijli Yojana with Rayzona Renewables Energy. Instant estimates with zero hidden costs.'}
+            {subtitle || 'Find out your eligible Government Subsidy and monthly electricity bill savings under PM Surya Ghar Muft Bijli Yojana with Rayzona Renewables Energy.'}
           </p>
         </div>
 
@@ -224,8 +212,8 @@ const SolarCalculator = ({ title, subtitle, showFullPageLink = false }) => {
               <div className="solar-calc__spec-box">
                 <FaClock className="solar-calc__spec-icon" />
                 <div>
-                  <span className="solar-calc__spec-label">Payback Period</span>
-                  <strong className="solar-calc__spec-value">~{paybackYears} Years</strong>
+                  <span className="solar-calc__spec-label">Bill Reduction</span>
+                  <strong className="solar-calc__spec-value">Up to 90%</strong>
                 </div>
               </div>
             </div>
@@ -248,56 +236,48 @@ const SolarCalculator = ({ title, subtitle, showFullPageLink = false }) => {
 
           </div>
 
-          {/* Pricing & Results Column (Right) */}
+          {/* Subsidy & Benefits Column (Right) */}
           <div className="solar-calc__results-card">
             
             <div className="solar-calc__results-header">
-              <h3 className="solar-calc__results-title">Estimated Cost &amp; Subsidy</h3>
+              <h3 className="solar-calc__results-title">Subsidy &amp; Benefit Summary</h3>
               <span className="solar-calc__govt-tag">Direct Bank Transfer</span>
             </div>
 
-            {/* Price Breakdown */}
-            <div className="solar-calc__price-breakdown">
-              <div className="solar-calc__breakdown-row">
-                <span className="solar-calc__breakdown-label">Approx. Total System Cost:</span>
-                <span className="solar-calc__breakdown-val">₹{grossCost.toLocaleString('en-IN')}</span>
+            {/* Subsidy Highlight Card */}
+            <div className="solar-calc__subsidy-hero-card">
+              <div className="solar-calc__subsidy-hero-badge">
+                <FaGift /> Eligible Government Subsidy
               </div>
-
-              <div className="solar-calc__breakdown-row solar-calc__breakdown-row--subsidy">
-                <span className="solar-calc__breakdown-label">
-                  <strong>PM Surya Ghar Subsidy:</strong>
-                  <small>Govt. Central Subsidy</small>
-                </span>
-                <span className="solar-calc__breakdown-val solar-calc__subsidy-amount">
-                  - ₹{subsidy.toLocaleString('en-IN')}
-                </span>
+              <div className="solar-calc__subsidy-hero-amount">
+                ₹{subsidy.toLocaleString('en-IN')}
               </div>
-
-              <div className="solar-calc__divider"></div>
-
-              <div className="solar-calc__net-cost-row">
-                <div>
-                  <span className="solar-calc__net-cost-label">Net Effective Cost:</span>
-                  <small className="solar-calc__net-cost-sub">Your actual investment</small>
-                </div>
-                <div className="solar-calc__net-cost-val">
-                  ₹{netCost.toLocaleString('en-IN')}*
-                </div>
-              </div>
+              <p className="solar-calc__subsidy-hero-desc">
+                Credited directly to your Aadhaar-linked bank account under Central PM Surya Ghar Muft Bijli Yojana.
+              </p>
             </div>
 
             {/* Savings Box */}
             <div className="solar-calc__savings-banner">
               <div className="solar-calc__savings-stat">
                 <span className="solar-calc__savings-title">Estimated Monthly Savings</span>
-                <span className="solar-calc__savings-num">₹{estimatedMonthlySavings.toLocaleString('en-IN')} / mo</span>
+                <span className="solar-calc__savings-num">~₹{estimatedMonthlySavings.toLocaleString('en-IN')} / mo</span>
               </div>
               <div className="solar-calc__savings-divider"></div>
               <div className="solar-calc__savings-stat">
                 <span className="solar-calc__savings-title">25-Year Lifetime Savings</span>
                 <span className="solar-calc__savings-num solar-calc__savings-num--gold">
-                  ₹{(lifetimeSavings25Yrs / 100000).toFixed(2)} Lakhs+
+                  ₹{(lifetimeSavings25Yrs / 100000).toFixed(1)} Lakhs+
                 </span>
+              </div>
+            </div>
+
+            {/* Quotation Note */}
+            <div className="solar-calc__quote-banner">
+              <FaCheckCircle className="solar-calc__quote-icon" />
+              <div>
+                <strong>Custom Best-Price Quotation</strong>
+                <span>Tailored for your roof structure, panel efficiency &amp; power requirements after free site survey.</span>
               </div>
             </div>
 
@@ -315,7 +295,7 @@ const SolarCalculator = ({ title, subtitle, showFullPageLink = false }) => {
                 className="solar-calc__cta-whatsapp"
                 aria-label="Claim Subsidy on WhatsApp"
               >
-                <FaWhatsapp /> Claim ₹{subsidy.toLocaleString('en-IN')} Subsidy Now
+                <FaWhatsapp /> Claim ₹{subsidy.toLocaleString('en-IN')} Subsidy &amp; Get Quote
               </button>
 
               <div className="solar-calc__secondary-actions">
@@ -337,7 +317,7 @@ const SolarCalculator = ({ title, subtitle, showFullPageLink = false }) => {
             </div>
 
             <p className="solar-calc__disclaimer">
-              *Approximate estimates based on standard MNRE &amp; PM Surya Ghar benchmarks in Pune. Final system price depends on site layout, structure elevation &amp; panel brand selected.
+              *Subsidy as per official MNRE PM Surya Ghar guidelines in Maharashtra. Customized system price quote provided after free physical site survey.
             </p>
 
           </div>

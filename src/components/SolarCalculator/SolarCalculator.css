@@ -274,7 +274,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .solar-calc__results-title {
@@ -296,79 +296,43 @@
   border: 1px solid rgba(164, 210, 51, 0.4);
 }
 
-/* Price Breakdown */
-.solar-calc__price-breakdown {
-  background: rgba(255, 255, 255, 0.06);
+/* Subsidy Hero Card */
+.solar-calc__subsidy-hero-card {
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
-  border-radius: 14px;
-  padding: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 20px;
+  border-radius: 16px;
+  padding: 22px 20px;
+  border: 1px solid rgba(164, 210, 51, 0.3);
+  text-align: center;
+  margin-bottom: 18px;
 }
 
-.solar-calc__breakdown-row {
-  display: flex;
-  justify-content: space-between;
+.solar-calc__subsidy-hero-badge {
+  display: inline-flex;
   align-items: center;
-  margin-bottom: 12px;
-}
-
-.solar-calc__breakdown-label {
-  font-size: 14px;
-  color: #cbd5e1;
-}
-
-.solar-calc__breakdown-label small {
-  display: block;
-  font-size: 11px;
-  color: #94a3b8;
-}
-
-.solar-calc__breakdown-val {
-  font-size: 16px;
-  font-weight: 600;
-  color: #f1f5f9;
-}
-
-.solar-calc__breakdown-row--subsidy {
-  margin-bottom: 14px;
-}
-
-.solar-calc__subsidy-amount {
-  font-size: 18px;
-  font-weight: 800;
-  color: #a4d233;
-}
-
-.solar-calc__divider {
-  height: 1px;
-  background: rgba(255, 255, 255, 0.15);
-  margin: 12px 0 16px 0;
-}
-
-.solar-calc__net-cost-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.solar-calc__net-cost-label {
-  font-size: 16px;
+  gap: 6px;
+  font-size: 12px;
   font-weight: 700;
-  color: #ffffff;
+  color: #facc15;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
 }
 
-.solar-calc__net-cost-sub {
-  display: block;
-  font-size: 11px;
-  color: #94a3b8;
-}
-
-.solar-calc__net-cost-val {
-  font-size: 32px;
-  font-weight: 800;
+.solar-calc__subsidy-hero-amount {
+  font-size: 38px;
+  font-weight: 900;
   color: #a4d233;
-  text-shadow: 0 2px 10px rgba(164, 210, 51, 0.3);
+  line-height: 1.1;
+  text-shadow: 0 4px 15px rgba(164, 210, 51, 0.35);
+  margin-bottom: 8px;
+}
+
+.solar-calc__subsidy-hero-desc {
+  font-size: 12px;
+  color: #cbd5e1;
+  line-height: 1.4;
+  margin: 0;
 }
 
 /* Savings Banner */
@@ -379,7 +343,7 @@
   background: rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   padding: 14px 10px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -411,6 +375,39 @@
   background: rgba(255, 255, 255, 0.15);
 }
 
+/* Quotation Banner */
+.solar-calc__quote-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  color: #e2e8f0;
+  line-height: 1.4;
+}
+
+.solar-calc__quote-banner strong {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 2px;
+  font-size: 13px;
+}
+
+.solar-calc__quote-banner span {
+  color: #94a3b8;
+}
+
+.solar-calc__quote-icon {
+  color: #a4d233;
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
 /* Eco Impact */
 .solar-calc__eco-impact {
   display: flex;
@@ -419,7 +416,7 @@
   font-size: 12px;
   color: #94a3b8;
   line-height: 1.4;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .solar-calc__eco-icon {
@@ -447,9 +444,9 @@
   gap: 10px;
   background: #25d366;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
-  padding: 15px 24px;
+  padding: 15px 20px;
   border-radius: 12px;
   border: none;
   cursor: pointer;
@@ -542,7 +539,7 @@
     grid-template-columns: 1fr;
   }
 
-  .solar-calc__net-cost-val {
-    font-size: 26px;
+  .solar-calc__subsidy-hero-amount {
+    font-size: 30px;
   }
 }

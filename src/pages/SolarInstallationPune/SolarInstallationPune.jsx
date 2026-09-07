@@ -19,7 +19,7 @@ const SolarInstallationPune = () => {
   const faqs = [
     {
       q: 'How much does solar installation cost in Pune?',
-      a: 'Solar installation cost in Pune depends on system size, type (on-grid, hybrid), and rooftop conditions. A 3 kW residential system typically ranges from ₹1.5–2 lakh after subsidy. Contact Rayzona for a free customised quote.'
+      a: 'Solar installation cost in Pune depends on system size, roof type, and component specifications. With PM Surya Ghar subsidy (up to ₹78,000 for homes), your net investment is significantly reduced. Contact Rayzona for a free site assessment and custom quote.'
     },
     {
       q: 'Is there a solar subsidy available in Pune?',

@@ -22,12 +22,12 @@ const calculatorFaqs = [
     a: 'A standard 3 kW residential solar system requires approximately 250 to 300 square feet of shadow-free rooftop space. High-efficiency Mono PERC / TopCon panels are used to generate maximum electricity in minimal space.'
   },
   {
-    q: 'Can housing societies (RWAs / Apartment complexes) claim PM Surya Ghar subsidy in Pune?',
-    a: 'Yes. Group Housing Societies (GHS) and Resident Welfare Associations (RWA) in Pune can receive ₹18,000 per kW for common area lighting and EV charging solar setups (up to 500 kW capacity).'
+    q: 'How do I get an exact price quotation for my rooftop?',
+    a: 'Solar system pricing is customized based on your roof type, structural elevation, inverter specifications, and energy consumption. Rayzona provides a free on-site survey and a transparent quotation with maximum eligible government subsidies deducted.'
   },
   {
-    q: 'What is the average payback period for rooftop solar in Maharashtra?',
-    a: 'With current MSEDCL electricity tariffs in Pune (averaging ₹8.5 to ₹12 per unit) and the ₹78,000 PM Surya Ghar subsidy, the payback period is typically 2.2 to 3 years. After that, your electricity is practically free for the remaining 22+ years of the panel warranty.'
+    q: 'Can housing societies (RWAs / Apartment complexes) claim PM Surya Ghar subsidy in Pune?',
+    a: 'Yes. Group Housing Societies (GHS) and Resident Welfare Associations (RWA) in Pune can receive ₹18,000 per kW for common area lighting and EV charging solar setups (up to 500 kW capacity).'
   }
 ];
 
@@ -38,11 +38,11 @@ const SolarCalculatorPage = () => {
         <title>PM Surya Ghar Solar Subsidy Calculator Pune | Rayzona Renewables Energy</title>
         <meta 
           name="description" 
-          content="Calculate your PM Surya Ghar Muft Bijli Yojana subsidy, rooftop solar system cost, and monthly savings in Pune with Rayzona Renewables Energy. Claim up to ₹78,000 subsidy." 
+          content="Calculate your PM Surya Ghar Muft Bijli Yojana subsidy, rooftop solar system generation, and monthly savings in Pune with Rayzona Renewables Energy. Claim up to ₹78,000 subsidy." 
         />
         <meta 
           name="keywords" 
-          content="PM Surya Ghar calculator Pune, solar subsidy calculator Pune, rooftop solar cost Pune, solar savings calculator, PM Surya Ghar subsidy Maharashtra, 3kW solar price Pune" 
+          content="PM Surya Ghar calculator Pune, solar subsidy calculator Pune, rooftop solar Pune, solar savings calculator, PM Surya Ghar subsidy Maharashtra, solar installation subsidy" 
         />
         <link rel="canonical" href={`${SITE_URL}/solar-calculator`} />
         
@@ -51,7 +51,7 @@ const SolarCalculatorPage = () => {
         <meta property="og:url" content={`${SITE_URL}/solar-calculator`} />
         <meta property="og:site_name" content="Rayzona Renewables Energy" />
         <meta property="og:title" content="PM Surya Ghar Solar Subsidy Calculator Pune | Rayzona Renewables Energy" />
-        <meta property="og:description" content="Calculate your PM Surya Ghar subsidy, system cost, and monthly electricity bill savings in Pune instantly." />
+        <meta property="og:description" content="Calculate your PM Surya Ghar subsidy, generation capacity, and monthly electricity bill savings in Pune instantly." />
         <meta property="og:image" content={`${SITE_URL}/og-image.jpg`} />
         
         {/* Twitter */}
@@ -77,7 +77,7 @@ const SolarCalculatorPage = () => {
             PM Surya Ghar <span className="solar-calc-page__highlight">Solar Subsidy Calculator</span> Pune
           </h1>
           <p className="solar-calc-page__desc">
-            Find out your exact subsidy eligibility under PM Surya Ghar Muft Bijli Yojana, net investment cost, and monthly power bill savings in Pune and Maharashtra.
+            Find out your eligible subsidy under PM Surya Ghar Muft Bijli Yojana, generation capacity, and monthly power bill savings in Pune and Maharashtra.
           </p>
         </div>
       </div>
@@ -85,7 +85,7 @@ const SolarCalculatorPage = () => {
       {/* Interactive Calculator Component */}
       <SolarCalculator />
 
-      {/* Subsidy Slab Guide Table */}
+      {/* Subsidy Slab Guide Table (NO PRICES) */}
       <section className="solar-calc-page__table-section">
         <div className="solar-calc-page__table-container">
           <h2 className="solar-calc-page__section-title">
@@ -102,8 +102,8 @@ const SolarCalculatorPage = () => {
                   <th>System Capacity</th>
                   <th>Suitable Monthly Bill</th>
                   <th>PM Surya Ghar Subsidy</th>
-                  <th>Est. Net Cost</th>
-                  <th>Monthly Savings</th>
+                  <th>Est. Monthly Generation</th>
+                  <th>Monthly Bill Savings</th>
                 </tr>
               </thead>
               <tbody>
@@ -111,43 +111,43 @@ const SolarCalculatorPage = () => {
                   <td><strong>1 kW System</strong></td>
                   <td>₹1,000 – ₹1,800</td>
                   <td className="solar-calc-page__subsidy-td">₹30,000</td>
-                  <td>~₹40,000</td>
-                  <td>~₹1,200/mo</td>
+                  <td>~120–130 Units</td>
+                  <td>Up to 90% (~₹1,200/mo)</td>
                 </tr>
                 <tr>
                   <td><strong>2 kW System</strong></td>
                   <td>₹1,800 – ₹3,500</td>
                   <td className="solar-calc-page__subsidy-td">₹60,000</td>
-                  <td>~₹75,000</td>
-                  <td>~₹2,500/mo</td>
+                  <td>~240–260 Units</td>
+                  <td>Up to 90% (~₹2,500/mo)</td>
                 </tr>
                 <tr className="solar-calc-page__highlight-row">
                   <td><strong>3 kW System (Most Popular)</strong></td>
                   <td>₹3,500 – ₹5,500</td>
                   <td className="solar-calc-page__subsidy-td"><strong>₹78,000</strong> (Max Cap)</td>
-                  <td><strong>~₹1,12,000</strong></td>
-                  <td><strong>~₹4,200/mo</strong></td>
+                  <td><strong>~360–400 Units</strong></td>
+                  <td><strong>Up to 90% (~₹4,200/mo)</strong></td>
                 </tr>
                 <tr>
                   <td><strong>4 kW System</strong></td>
                   <td>₹5,500 – ₹7,500</td>
                   <td className="solar-calc-page__subsidy-td">₹78,000</td>
-                  <td>~₹1,67,000</td>
-                  <td>~₹5,500/mo</td>
+                  <td>~480–520 Units</td>
+                  <td>Up to 90% (~₹5,500/mo)</td>
                 </tr>
                 <tr>
                   <td><strong>5 kW System</strong></td>
                   <td>₹7,500 – ₹10,000</td>
                   <td className="solar-calc-page__subsidy-td">₹78,000</td>
-                  <td>~₹2,22,000</td>
-                  <td>~₹7,200/mo</td>
+                  <td>~600–650 Units</td>
+                  <td>Up to 90% (~₹7,200/mo)</td>
                 </tr>
                 <tr>
                   <td><strong>10 kW System</strong></td>
                   <td>₹15,000+</td>
                   <td className="solar-calc-page__subsidy-td">₹78,000</td>
-                  <td>~₹5,02,000</td>
-                  <td>~₹15,000+/mo</td>
+                  <td>~1,200–1,300 Units</td>
+                  <td>Up to 90% (~₹15,000+/mo)</td>
                 </tr>
               </tbody>
             </table>

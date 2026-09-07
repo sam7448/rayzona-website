@@ -114,7 +114,7 @@ const ResidentialSolar = () => {
 
         <SolarCalculator 
           title={<>Estimate Your Home Solar Subsidy &amp; <span className="solar-calc__highlight">Monthly Savings</span></>}
-          subtitle="Use our calculator to see exact PM Surya Ghar subsidy deductions and net system cost for your Pune residence."
+          subtitle="Use our calculator to see eligible PM Surya Ghar central subsidies and electricity bill savings for your Pune residence."
         />
 
         <div className="service-page__faq">
@@ -122,7 +122,7 @@ const ResidentialSolar = () => {
           <div className="service-page__faq-list">
             {[
               { q: 'What size solar system do I need for my home in Pune?', a: 'For an average Pune home consuming 300–500 units/month, a 3–5 kW on-grid solar system is typically recommended. Our engineer will calculate the exact size based on your actual consumption and rooftop space.' },
-              { q: 'How much does a home solar system cost in Pune?', a: 'A 3 kW home solar system in Pune costs approximately ₹1.5–2 lakh after PM Surya Ghar subsidy. Without subsidy, total cost is around ₹2–2.5 lakh. Rayzona provides transparent, competitive pricing.' },
+              { q: 'How much does a home solar system cost in Pune?', a: 'Pricing depends on your roof structure, panel efficiency, inverter brand, and required capacity. Rayzona provides a free on-site survey with transparent quotations, deducting the full PM Surya Ghar subsidy (up to ₹78,000).' },
               { q: 'Can I install solar in a flat or apartment in Pune?', a: 'For apartments, a group net metering or cooperative housing society solar installation is possible. Individual rooftop solar works best for independent houses, bungalows, and villas.' },
               { q: 'What is the maintenance required for home solar panels?', a: 'Solar panels need minimal maintenance — primarily bi-annual cleaning to remove dust. Rayzona offers Annual Maintenance Contracts (AMC) to ensure your system runs efficiently throughout its lifetime.' },
               { q: 'Will solar work during Maharashtra monsoon?', a: 'Yes. Solar panels still generate electricity on overcast days, though at reduced capacity. Pune\'s high annual sunshine hours (more than 300 sunny days) more than compensates for cloudy monsoon periods.' },
