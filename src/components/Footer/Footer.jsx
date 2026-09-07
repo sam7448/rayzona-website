@@ -1,4 +1,4 @@
-﻿import './Footer.css';
+import './Footer.css';
 import logo from '../../assets/logo/rayzonaLogo.png';
 import { FaFacebookF, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -31,6 +31,7 @@ const Footer = () => {
             <ul className="footer__links">
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/solar-calculator">PM Surya Ghar Calculator</Link></li>
               <li><Link to="/solar-installation-pune">Solar Installation Pune</Link></li>
               <li><Link to="/products-services">Solar Products</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>

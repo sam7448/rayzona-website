@@ -1,4 +1,4 @@
-﻿import './App.css';
+import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 
@@ -13,6 +13,7 @@ import Stats from './components/Stats/Stats';
 import About from './components/About/About';
 import SolarSolutions from './components/SolarSolutions/SolarSolutions';
 import ServicesScope from './components/ServicesScope/ServicesScope';
+import SolarCalculator from './components/SolarCalculator/SolarCalculator';
 import ApplyNow from './components/ApplyNow/ApplyNow';
 import FAQs from './components/FAQs/FAQs';
 import CTA from './components/CTA/CTA';
@@ -22,6 +23,7 @@ import ServiceAreas from './components/ServiceAreas/ServiceAreas';
 import ProductsServices from './pages/ProductsServices/ProductsServices';
 import AboutPage from './pages/About/About';
 import Contact from './pages/Contact/Contact';
+import SolarCalculatorPage from './pages/SolarCalculator/SolarCalculatorPage';
 import SolarInstallationPune from './pages/SolarInstallationPune/SolarInstallationPune';
 import ResidentialSolar from './pages/ResidentialSolar/ResidentialSolar';
 import CommercialSolar from './pages/CommercialSolar/CommercialSolar';
@@ -63,6 +65,7 @@ const HomePage = () => (
     <Stats />
     <About />
     <SolarSolutions />
+    <SolarCalculator />
     <ServicesScope />
     <ApplyNow />
     <ServiceAreas />
@@ -83,10 +86,11 @@ function App() {
               {/* Home */}
               <Route path="/" element={<HomePage />} />
 
-              {/* Info pages */}
+              {/* Info & Tool pages */}
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/products-services" element={<ProductsServices />} />
+              <Route path="/solar-calculator" element={<SolarCalculatorPage />} />
 
               {/* Service pages */}
               <Route path="/solar-installation-pune" element={<SolarInstallationPune />} />

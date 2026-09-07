@@ -1,0 +1,548 @@
+.solar-calc {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #f8fafc 0%, #edf7ed 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.solar-calc__container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* Header */
+.solar-calc__header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+.solar-calc__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 8px 18px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+  border: 1px solid #c8e6c9;
+}
+
+.solar-calc__title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.solar-calc__highlight {
+  color: #2e7d32;
+  background: linear-gradient(120deg, #2e7d32 0%, #558b2f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.solar-calc__subtitle {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* Main Grid */
+.solar-calc__grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+/* Controls Card (Left) */
+.solar-calc__controls-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 36px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Mode Tabs */
+.solar-calc__mode-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background: #f1f5f9;
+  padding: 6px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.solar-calc__mode-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.solar-calc__mode-btn--active {
+  background: #2e7d32;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.25);
+}
+
+/* Input & Sliders */
+.solar-calc__input-group {
+  margin-bottom: 28px;
+}
+
+.solar-calc__input-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+
+.solar-calc__label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.solar-calc__input-val {
+  font-size: 24px;
+  font-weight: 800;
+  color: #2e7d32;
+}
+
+.solar-calc__input-val span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.solar-calc__slider {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #e2e8f0;
+  outline: none;
+  cursor: pointer;
+  accent-color: #2e7d32;
+  margin-bottom: 18px;
+}
+
+.solar-calc__presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.solar-calc__preset-chip {
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4b5563;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.solar-calc__preset-chip:hover {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.solar-calc__preset-chip--active {
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-color: #a5d6a7;
+  font-weight: 700;
+}
+
+/* Specs Row */
+.solar-calc__specs-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 14px;
+  border: 1px solid #edf2f7;
+}
+
+.solar-calc__spec-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.solar-calc__spec-icon {
+  font-size: 22px;
+  color: #2e7d32;
+  background: #e8f5e9;
+  padding: 8px;
+  border-radius: 10px;
+  box-sizing: content-box;
+  flex-shrink: 0;
+}
+
+.solar-calc__spec-label {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.solar-calc__spec-value {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* Trust List */
+.solar-calc__trust-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.solar-calc__trust-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.solar-calc__trust-icon {
+  color: #2e7d32;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+/* Results Card (Right) */
+.solar-calc__results-card {
+  background: linear-gradient(145deg, #0d2b1d 0%, #17422c 100%);
+  border-radius: 20px;
+  padding: 36px;
+  color: #ffffff;
+  box-shadow: 0 16px 40px rgba(13, 43, 29, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.solar-calc__results-card::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(164, 210, 51, 0.15) 0%, rgba(164, 210, 51, 0) 70%);
+  pointer-events: none;
+}
+
+.solar-calc__results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.solar-calc__results-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.solar-calc__govt-tag {
+  background: rgba(164, 210, 51, 0.2);
+  color: #a4d233;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(164, 210, 51, 0.4);
+}
+
+/* Price Breakdown */
+.solar-calc__price-breakdown {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+.solar-calc__breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.solar-calc__breakdown-label {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.solar-calc__breakdown-label small {
+  display: block;
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.solar-calc__breakdown-val {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.solar-calc__breakdown-row--subsidy {
+  margin-bottom: 14px;
+}
+
+.solar-calc__subsidy-amount {
+  font-size: 18px;
+  font-weight: 800;
+  color: #a4d233;
+}
+
+.solar-calc__divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 12px 0 16px 0;
+}
+
+.solar-calc__net-cost-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.solar-calc__net-cost-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.solar-calc__net-cost-sub {
+  display: block;
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.solar-calc__net-cost-val {
+  font-size: 32px;
+  font-weight: 800;
+  color: #a4d233;
+  text-shadow: 0 2px 10px rgba(164, 210, 51, 0.3);
+}
+
+/* Savings Banner */
+.solar-calc__savings-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 14px 10px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.solar-calc__savings-stat {
+  text-align: center;
+}
+
+.solar-calc__savings-title {
+  display: block;
+  font-size: 11px;
+  color: #94a3b8;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.solar-calc__savings-num {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.solar-calc__savings-num--gold {
+  color: #facc15;
+}
+
+.solar-calc__savings-divider {
+  width: 1px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Eco Impact */
+.solar-calc__eco-impact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #94a3b8;
+  line-height: 1.4;
+  margin-bottom: 22px;
+}
+
+.solar-calc__eco-icon {
+  font-size: 18px;
+  color: #a4d233;
+  flex-shrink: 0;
+}
+
+.solar-calc__eco-impact strong {
+  color: #ffffff;
+}
+
+/* CTA Actions */
+.solar-calc__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.solar-calc__cta-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #25d366;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+}
+
+.solar-calc__cta-whatsapp:hover {
+  background: #20ba5a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+}
+
+.solar-calc__secondary-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.solar-calc__cta-call,
+.solar-calc__cta-survey {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.solar-calc__cta-call {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.solar-calc__cta-call:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.solar-calc__cta-survey {
+  background: #a4d233;
+  color: #0d2b1d;
+}
+
+.solar-calc__cta-survey:hover {
+  background: #93c029;
+  color: #0d2b1d;
+}
+
+.solar-calc__disclaimer {
+  font-size: 11px;
+  color: #64748b;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .solar-calc__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .solar-calc {
+    padding: 50px 16px;
+  }
+
+  .solar-calc__title {
+    font-size: 26px;
+  }
+
+  .solar-calc__controls-card,
+  .solar-calc__results-card {
+    padding: 24px 18px;
+  }
+
+  .solar-calc__specs-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .solar-calc__secondary-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .solar-calc__net-cost-val {
+    font-size: 26px;
+  }
+}

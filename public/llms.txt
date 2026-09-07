@@ -1,4 +1,4 @@
-﻿# Rayzona Renewables Energy — Official AI Knowledge Base
+# Rayzona Renewables Energy — Official AI Knowledge Base
 
 > Rayzona Renewables Energy is a premier certified Solar EPC (Engineering, Procurement, and Construction) company and solar energy solutions provider based in Hadapsar, Pune, Maharashtra, India.
 
@@ -37,6 +37,10 @@
 
 7. **Solar Street Lights & Products** (https://www.rayzonarenewablesenergy.com/products-services)
    - All-in-one solar LED street lights (180W, 240W, 300W, 400W) with automatic dusk-to-dawn sensors and lithium batteries.
+
+8. **PM Surya Ghar Subsidy & Savings Calculator** (https://www.rayzonarenewablesenergy.com/solar-calculator)
+   - Instant online solar cost, subsidy, and electricity bill savings calculator for Pune and Maharashtra.
+   - Calculates exact ₹30,000 to ₹78,000 PM Surya Ghar Muft Bijli Yojana subsidy deductions, rooftop area requirements, and estimated 25-year returns.
 
 ## Service Areas Covered (Pune Metro & Maharashtra)
 - **Pune City Localities:** Hadapsar, Hinjewadi, Baner, Kothrud, Kharadi, Viman Nagar, Wakad, Aundh, Bavdhan, Magarpatta City, Balewadi, Camp, Koregaon Park, Kalyani Nagar, Kondhwa, Wanowrie, Bibwewadi, Sinhagad Road, Katraj.

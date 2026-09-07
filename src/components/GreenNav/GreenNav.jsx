@@ -111,6 +111,17 @@ const GreenNav = () => {
 
           <li role="none">
             <Link
+              to="/solar-calculator"
+              className={`green-nav__link green-nav__link--calc ${location.pathname === '/solar-calculator' ? 'green-nav__link--active' : ''}`}
+              onClick={closeMenu}
+              role="menuitem"
+            >
+              SUBSIDY CALCULATOR <span className="green-nav__calc-badge">PM SURYA GHAR</span>
+            </Link>
+          </li>
+
+          <li role="none">
+            <Link
               to="/contact"
               className={`green-nav__link ${location.pathname === '/contact' ? 'green-nav__link--active' : ''}`}
               onClick={closeMenu}

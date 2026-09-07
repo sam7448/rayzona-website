@@ -1,4 +1,4 @@
-﻿import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
@@ -6,6 +6,7 @@ import ServiceSchema from '../../seo/ServiceSchema';
 import FAQSchema from '../../seo/FAQSchema';
 import { FaSolarPanel, FaHome, FaBuilding, FaIndustry, FaCheckCircle, FaTools, FaPhoneAlt } from 'react-icons/fa';
 import residentialImg from '../../assets/images/ResidentialSolar.webp';
+import SolarCalculator from '../../components/SolarCalculator/SolarCalculator';
 
 const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 const WHATSAPP = '917448299293';
@@ -138,6 +139,9 @@ const SolarInstallationPune = () => {
             ))}
           </div>
         </div>
+
+        {/* Solar Subsidy Calculator */}
+        <SolarCalculator />
 
         {/* FAQ */}
         <div className="service-page__faq">

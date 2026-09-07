@@ -1,10 +1,11 @@
-﻿import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
 import ServiceSchema from '../../seo/ServiceSchema';
 import FAQSchema from '../../seo/FAQSchema';
 import residentialImg from '../../assets/images/ResidentialSolar.webp';
+import SolarCalculator from '../../components/SolarCalculator/SolarCalculator';
 
 const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 const WHATSAPP = '917448299293';
@@ -79,6 +80,11 @@ const OnGridSolar = () => {
             <img src={residentialImg} alt="On-grid solar system installed on rooftop in Pune with MSEDCL net metering" loading="lazy" />
           </div>
         </div>
+
+        <SolarCalculator 
+          title={<>On-Grid Solar System &amp; <span className="solar-calc__highlight">Subsidy Calculator</span></>}
+          subtitle="See exact PM Surya Ghar subsidy benefits, net system investment, and monthly bill savings for Pune on-grid connections."
+        />
 
         <div className="service-page__faq">
           <h2 className="service-page__section-title">FAQ — On-Grid Solar in Pune</h2>

@@ -1,10 +1,11 @@
-﻿import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
 import ServiceSchema from '../../seo/ServiceSchema';
 import { FaHome, FaSolarPanel, FaCheckCircle, FaRupeeSign, FaLeaf, FaShieldAlt } from 'react-icons/fa';
 import residentialImg from '../../assets/images/ResidentialSolar.webp';
+import SolarCalculator from '../../components/SolarCalculator/SolarCalculator';
 
 const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 const WHATSAPP = '917448299293';
@@ -110,6 +111,11 @@ const ResidentialSolar = () => {
             ))}
           </div>
         </div>
+
+        <SolarCalculator 
+          title={<>Estimate Your Home Solar Subsidy &amp; <span className="solar-calc__highlight">Monthly Savings</span></>}
+          subtitle="Use our calculator to see exact PM Surya Ghar subsidy deductions and net system cost for your Pune residence."
+        />
 
         <div className="service-page__faq">
           <h2 className="service-page__section-title">FAQ — Residential Solar in Pune</h2>

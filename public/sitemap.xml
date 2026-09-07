@@ -9,10 +9,18 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Primary SEO landing page -->
+  <!-- Primary SEO landing pages -->
   <url>
     <loc>https://www.rayzonarenewablesenergy.com/solar-installation-pune</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- PM Surya Ghar Subsidy Calculator -->
+  <url>
+    <loc>https://www.rayzonarenewablesenergy.com/solar-calculator</loc>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>

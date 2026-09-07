@@ -77,6 +77,20 @@
   color: white;
 }
 
+.green-nav__calc-badge {
+  background: #facc15;
+  color: #0d2b1d;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 20px;
+  margin-left: 6px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
 /* ── Dropdown ── */
 .green-nav__dropdown-wrapper {
   position: relative;
