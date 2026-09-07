@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+﻿import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
@@ -17,11 +17,11 @@ const RooftopSolar = () => {
     <div className="service-page">
       <Helmet>
         <title>Rooftop Solar Installation Pune | Rooftop Solar Panel | RAYZONA</title>
-        <meta name="description" content="Rooftop solar panel installation in Pune for homes and businesses. On-grid rooftop solar with net metering, subsidy & 25-year warranty. Hadapsar, Hinjewadi, Baner & all Pune. RAYZONA RENEWABLES ENERGY." />
+        <meta name="description" content="Rooftop solar panel installation in Pune for homes and businesses. On-grid rooftop solar with net metering, subsidy & 25-year warranty. Hadapsar, Hinjewadi, Baner & all Pune. Rayzona Renewables Energy." />
         <meta name="keywords" content="rooftop solar Pune, rooftop solar installation Pune, rooftop solar panel Pune, rooftop solar system Pune, rooftop solar for home Pune" />
         <link rel="canonical" href={`${SITE_URL}/rooftop-solar`} />
         <meta property="og:url" content={`${SITE_URL}/rooftop-solar`} />
-        <meta property="og:title" content="Rooftop Solar Installation Pune | RAYZONA RENEWABLES ENERGY" />
+        <meta property="og:title" content="Rooftop Solar Installation Pune | Rayzona Renewables Energy" />
         <meta property="og:description" content="Rooftop solar installation in Pune for homes & businesses. Net metering, subsidy, 25-year warranty. Free rooftop assessment. Call +91 7448299293." />
       </Helmet>
 

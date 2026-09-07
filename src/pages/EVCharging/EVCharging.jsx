@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+﻿import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
@@ -25,11 +25,11 @@ const EVCharging = () => {
     <div className="service-page">
       <Helmet>
         <title>EV Charging Station Installation Pune | Solar EV Charging | RAYZONA</title>
-        <meta name="description" content="EV charging station installation in Pune for homes, offices, apartments & commercial complexes. Solar-powered EV charging solutions by RAYZONA RENEWABLES ENERGY. Free consultation — call +91 7448299293." />
+        <meta name="description" content="EV charging station installation in Pune for homes, offices, apartments & commercial complexes. Solar-powered EV charging solutions by Rayzona Renewables Energy. Free consultation — call +91 7448299293." />
         <meta name="keywords" content="EV charging station Pune, electric vehicle charging Pune, solar EV charging Pune, home EV charger installation Pune, commercial EV charging Pune" />
         <link rel="canonical" href={`${SITE_URL}/ev-charging`} />
         <meta property="og:url" content={`${SITE_URL}/ev-charging`} />
-        <meta property="og:title" content="EV Charging Station Installation Pune | RAYZONA RENEWABLES ENERGY" />
+        <meta property="og:title" content="EV Charging Station Installation Pune | Rayzona Renewables Energy" />
         <meta property="og:description" content="EV charging station installation in Pune for homes & businesses. Solar-powered EV charging. Free consultation. Call +91 7448299293." />
       </Helmet>
 

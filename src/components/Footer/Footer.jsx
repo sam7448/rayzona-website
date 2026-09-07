@@ -1,4 +1,4 @@
-import './Footer.css';
+﻿import './Footer.css';
 import logo from '../../assets/logo/rayzonaLogo.png';
 import { FaFacebookF, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -16,7 +16,7 @@ const Footer = () => {
               </Link>
             </div>
             <p className="footer__description">
-              RAYZONA RENEWABLES ENERGY — trusted solar panel installation company in Pune, Maharashtra. Residential, commercial & industrial solar solutions with expert installation and long-term support.
+              Rayzona Renewables Energy — trusted solar panel installation company in Pune, Maharashtra. Residential, commercial & industrial solar solutions with expert installation and long-term support.
             </p>
             <div className="footer__social">
               <a href="https://www.instagram.com/rayzona_renewables_energy" className="footer__social-link" aria-label="Rayzona Renewables Energy on Instagram" target="_blank" rel="noopener noreferrer">
@@ -79,7 +79,7 @@ const Footer = () => {
 
         <div className="footer__bottom">
           <p className="footer__copyright">
-            © 2025 RAYZONA RENEWABLES ENERGY. All rights reserved. | Solar Panel Installation in Pune
+            © 2025 Rayzona Renewables Energy. All rights reserved. | Solar Panel Installation in Pune
           </p>
           <div className="footer__legal">
             <Link to="/about">About Us</Link>

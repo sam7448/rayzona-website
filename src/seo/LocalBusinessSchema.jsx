@@ -1,4 +1,4 @@
-const LocalBusinessSchema = () => {
+﻿const LocalBusinessSchema = () => {
   const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 
   const schema = {
@@ -7,9 +7,9 @@ const LocalBusinessSchema = () => {
       {
         "@type": ["LocalBusiness", "ProfessionalService", "HomeAndConstructionBusiness"],
         "@id": `${SITE_URL}/#business`,
-        "name": "RAYZONA RENEWABLES ENERGY",
+        "name": "Rayzona Renewables Energy",
         "alternateName": "Rayzona Energy",
-        "description": "RAYZONA RENEWABLES ENERGY is a certified solar EPC and solar panel installation company in Hadapsar, Pune, Maharashtra providing residential, commercial, and industrial rooftop solar solutions, EV charging stations, solar maintenance, and on-grid solar systems with MSEDCL net metering.",
+        "description": "Rayzona Renewables Energy is a certified solar EPC and solar panel installation company in Hadapsar, Pune, Maharashtra providing residential, commercial, and industrial rooftop solar solutions, EV charging stations, solar maintenance, and on-grid solar systems with MSEDCL net metering.",
         "url": SITE_URL,
         "image": `${SITE_URL}/og-image.jpg`,
         "logo": `${SITE_URL}/logo.png`,
@@ -140,7 +140,7 @@ const LocalBusinessSchema = () => {
       {
         "@type": "Organization",
         "@id": `${SITE_URL}/#organization`,
-        "name": "RAYZONA RENEWABLES ENERGY",
+        "name": "Rayzona Renewables Energy",
         "url": SITE_URL,
         "logo": {
           "@type": "ImageObject",

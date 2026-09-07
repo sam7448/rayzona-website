@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+﻿import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
@@ -25,11 +25,11 @@ const OnGridSolar = () => {
     <div className="service-page">
       <Helmet>
         <title>On-Grid Solar System Pune | Grid-Connected Solar | RAYZONA</title>
-        <meta name="description" content="On-grid solar system installation in Pune for homes and businesses. Grid-connected solar with MSEDCL net metering to reduce electricity bills by 90%. Expert installation by RAYZONA RENEWABLES ENERGY. Free quote." />
+        <meta name="description" content="On-grid solar system installation in Pune for homes and businesses. Grid-connected solar with MSEDCL net metering to reduce electricity bills by 90%. Expert installation by Rayzona Renewables Energy. Free quote." />
         <meta name="keywords" content="on-grid solar Pune, on-grid solar system Pune, grid connected solar Pune, net metering solar Pune, solar net metering MSEDCL Pune" />
         <link rel="canonical" href={`${SITE_URL}/on-grid-solar`} />
         <meta property="og:url" content={`${SITE_URL}/on-grid-solar`} />
-        <meta property="og:title" content="On-Grid Solar System Pune | RAYZONA RENEWABLES ENERGY" />
+        <meta property="og:title" content="On-Grid Solar System Pune | Rayzona Renewables Energy" />
         <meta property="og:description" content="On-grid solar system in Pune with MSEDCL net metering. Reduce electricity bills by 90%. Professional installation. Free quote — call +91 7448299293." />
       </Helmet>
 

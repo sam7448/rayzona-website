@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+﻿import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
@@ -16,12 +16,12 @@ const SolarMaintenance = () => {
   return (
     <div className="service-page">
       <Helmet>
-        <title>Solar Panel Maintenance & AMC in Pune | RAYZONA RENEWABLES ENERGY</title>
-        <meta name="description" content="Professional solar panel maintenance and AMC (Annual Maintenance Contract) services in Pune. Panel cleaning, inverter health check, system inspection. Keep your solar system at peak efficiency. RAYZONA RENEWABLES ENERGY." />
+        <title>Solar Panel Maintenance & AMC in Pune | Rayzona Renewables Energy</title>
+        <meta name="description" content="Professional solar panel maintenance and AMC (Annual Maintenance Contract) services in Pune. Panel cleaning, inverter health check, system inspection. Keep your solar system at peak efficiency. Rayzona Renewables Energy." />
         <meta name="keywords" content="solar maintenance Pune, solar AMC Pune, solar panel cleaning Pune, solar inverter repair Pune, solar system maintenance Pune, solar panel service Pune" />
         <link rel="canonical" href={`${SITE_URL}/solar-maintenance`} />
         <meta property="og:url" content={`${SITE_URL}/solar-maintenance`} />
-        <meta property="og:title" content="Solar Panel Maintenance & AMC Pune | RAYZONA RENEWABLES ENERGY" />
+        <meta property="og:title" content="Solar Panel Maintenance & AMC Pune | Rayzona Renewables Energy" />
         <meta property="og:description" content="Solar maintenance and AMC in Pune. Panel cleaning, inverter health check, system inspection. Keep solar at peak output. Call +91 7448299293." />
       </Helmet>
 

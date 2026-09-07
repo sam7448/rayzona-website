@@ -8,7 +8,7 @@
     "provider": {
       "@type": "LocalBusiness",
       "@id": "https://www.rayzonarenewablesenergy.com/#business",
-      "name": "RAYZONA RENEWABLES ENERGY"
+      "name": "Rayzona Renewables Energy"
     },
     "areaServed": {
       "@type": "City",

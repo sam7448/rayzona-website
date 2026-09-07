@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+﻿import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
@@ -18,7 +18,7 @@ const CommercialSolar = () => {
     <div className="service-page">
       <Helmet>
         <title>Commercial Solar Installation Pune | Business Solar | RAYZONA</title>
-        <meta name="description" content="Commercial solar panel installation in Pune for offices, shops, warehouses & industries. Reduce business electricity costs by 70–90%. RAYZONA RENEWABLES ENERGY — trusted commercial solar EPC in Pune. Free energy audit." />
+        <meta name="description" content="Commercial solar panel installation in Pune for offices, shops, warehouses & industries. Reduce business electricity costs by 70–90%. Rayzona Renewables Energy — trusted commercial solar EPC in Pune. Free energy audit." />
         <meta name="keywords" content="commercial solar Pune, solar for business Pune, commercial solar installation Pune, industrial solar Pune, solar EPC commercial Pune, office solar panel Pune" />
         <link rel="canonical" href={`${SITE_URL}/commercial-solar`} />
         <meta property="og:url" content={`${SITE_URL}/commercial-solar`} />

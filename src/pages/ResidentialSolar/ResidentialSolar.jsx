@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+﻿import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
@@ -18,7 +18,7 @@ const ResidentialSolar = () => {
     <div className="service-page">
       <Helmet>
         <title>Residential Solar Panel Installation Pune | Home Solar | RAYZONA</title>
-        <meta name="description" content="Residential solar panel installation in Pune for homes and housing societies. Reduce home electricity bills by 90%. Subsidy guidance, net metering & AMC included. Free home visit by RAYZONA RENEWABLES ENERGY." />
+        <meta name="description" content="Residential solar panel installation in Pune for homes and housing societies. Reduce home electricity bills by 90%. Subsidy guidance, net metering & AMC included. Free home visit by Rayzona Renewables Energy." />
         <meta name="keywords" content="residential solar Pune, home solar panel installation Pune, rooftop solar for home Pune, solar for housing society Pune, solar subsidy home Pune" />
         <link rel="canonical" href={`${SITE_URL}/residential-solar`} />
         <meta property="og:url" content={`${SITE_URL}/residential-solar`} />

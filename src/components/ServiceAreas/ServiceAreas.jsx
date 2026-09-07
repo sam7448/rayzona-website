@@ -1,4 +1,4 @@
-import './ServiceAreas.css';
+﻿import './ServiceAreas.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -16,7 +16,7 @@ const ServiceAreas = () => {
           <span className="service-areas__badge">WHERE WE SERVE</span>
           <h2 className="service-areas__title">Solar Installation Service Areas in Pune</h2>
           <p className="service-areas__subtitle">
-            RAYZONA RENEWABLES ENERGY provides expert solar panel installation across Pune and the surrounding Pune Metropolitan Region. Whether you're in central Pune, Pimpri-Chinchwad, or the rapidly growing western suburbs, our team is ready to help you switch to solar.
+            Rayzona Renewables Energy provides expert solar panel installation across Pune and the surrounding Pune Metropolitan Region. Whether you're in central Pune, Pimpri-Chinchwad, or the rapidly growing western suburbs, our team is ready to help you switch to solar.
           </p>
         </div>
 

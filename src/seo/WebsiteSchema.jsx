@@ -1,4 +1,4 @@
-const WebsiteSchema = () => {
+﻿const WebsiteSchema = () => {
   const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
 
   const schema = {
@@ -7,7 +7,7 @@ const WebsiteSchema = () => {
       {
         "@type": "WebSite",
         "@id": `${SITE_URL}/#website`,
-        "name": "RAYZONA RENEWABLES ENERGY",
+        "name": "Rayzona Renewables Energy",
         "alternateName": ["Rayzona Energy", "Rayzona Pune", "Rayzona Renewables"],
         "url": SITE_URL,
         "description": "Solar panel installation company in Pune, Maharashtra offering residential, commercial, and industrial rooftop solar solutions, EV charging stations, and solar AMC maintenance.",
@@ -81,7 +81,7 @@ const WebsiteSchema = () => {
             "@type": "SiteNavigationElement",
             "position": 8,
             "name": "About Us",
-            "description": "Learn about RAYZONA RENEWABLES ENERGY team, experience, and mission in Pune",
+            "description": "Learn about Rayzona Renewables Energy team, experience, and mission in Pune",
             "url": `${SITE_URL}/about`
           },
           {

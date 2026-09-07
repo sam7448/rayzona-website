@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+﻿import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
@@ -41,12 +41,12 @@ const SolarInstallationPune = () => {
   return (
     <div className="service-page">
       <Helmet>
-        <title>Solar Panel Installation in Pune | RAYZONA RENEWABLES ENERGY</title>
-        <meta name="description" content="Expert solar panel installation in Pune by RAYZONA RENEWABLES ENERGY. Residential, commercial & industrial solar for Pune, Pimpri-Chinchwad, Hinjewadi & all of Maharashtra. Free site survey. Call +91 7448299293." />
+        <title>Solar Panel Installation in Pune | Rayzona Renewables Energy</title>
+        <meta name="description" content="Expert solar panel installation in Pune by Rayzona Renewables Energy. Residential, commercial & industrial solar for Pune, Pimpri-Chinchwad, Hinjewadi & all of Maharashtra. Free site survey. Call +91 7448299293." />
         <meta name="keywords" content="solar installation Pune, solar panel installation Pune, solar company Pune, best solar company Pune, solar EPC Pune, solar subsidy Pune" />
         <link rel="canonical" href={`${SITE_URL}/solar-installation-pune`} />
         <meta property="og:url" content={`${SITE_URL}/solar-installation-pune`} />
-        <meta property="og:title" content="Solar Panel Installation in Pune | RAYZONA RENEWABLES ENERGY" />
+        <meta property="og:title" content="Solar Panel Installation in Pune | Rayzona Renewables Energy" />
         <meta property="og:description" content="Expert solar panel installation in Pune. Residential, commercial & industrial solar. Free site survey & subsidy guidance. Call +91 7448299293." />
       </Helmet>
 
@@ -71,7 +71,7 @@ const SolarInstallationPune = () => {
           </nav>
           <h1 className="service-page__h1">Solar Panel Installation in Pune</h1>
           <p className="service-page__hero-desc">
-            RAYZONA RENEWABLES ENERGY is Pune's trusted solar EPC company. We deliver end-to-end solar panel installation for homes, businesses, and industries — from free site survey to commissioning and net metering.
+            Rayzona Renewables Energy is Pune's trusted solar EPC company. We deliver end-to-end solar panel installation for homes, businesses, and industries — from free site survey to commissioning and net metering.
           </p>
           <div className="service-page__hero-cta">
             <button className="service-page__btn-primary" onClick={() => handleWhatsApp('Hi, I want a free solar installation quote for my property in Pune.')}>

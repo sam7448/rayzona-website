@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+﻿import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import './NotFound.css';
 
@@ -6,7 +6,7 @@ const NotFound = () => {
   return (
     <div className="not-found">
       <Helmet>
-        <title>Page Not Found | RAYZONA RENEWABLES ENERGY</title>
+        <title>Page Not Found | Rayzona Renewables Energy</title>
         <meta name="description" content="The page you are looking for does not exist. Return to Rayzona Renewables Energy homepage for solar installation in Pune." />
         <meta name="robots" content="noindex, follow" />
       </Helmet>
