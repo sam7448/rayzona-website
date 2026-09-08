@@ -1,4 +1,5 @@
 import './App.css';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 
@@ -80,6 +81,12 @@ const HomePage = () => (
 );
 
 function App() {
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.hostname === 'www.rayzonarenewablesenergy.com') {
+      window.location.replace(`https://rayzonarenewablesenergy.com${window.location.pathname}${window.location.search}`);
+    }
+  }, []);
+
   return (
     <HelmetProvider>
       <Router>
