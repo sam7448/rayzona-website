@@ -125,13 +125,13 @@
 
 @media (max-width: 768px) {
   .about {
-    padding: 60px 15px;
+    padding: 50px 16px;
   }
 
   .about__main {
     grid-template-columns: 1fr;
-    gap: 40px;
-    padding: 30px;
+    gap: 30px;
+    padding: 0;
   }
 
   .about__content-section {
@@ -139,28 +139,24 @@
   }
 
   .about__title {
-    font-size: 32px;
-  }
-}
-
-@media (max-width: 480px) {
- .about__image-section {
-  display: none;
- }
-
-  .about__main{
-    padding: 20px;
-    gap: 20px;
-    flex-direction: column-reverse;
-    align-items: center;
-    display: flex;
-  }
-  .about__title {
     font-size: 28px;
+    margin-bottom: 20px;
   }
 
-  .about__badge {
-    font-size: 12px;
+  .about__image-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 14px;
+  }
+
+  .about__quote {
+    padding: 16px;
+    margin-bottom: 20px;
   }
 
   .about__quote-text {
@@ -168,10 +164,8 @@
   }
 
   .about__description {
-    font-size: 15px;
-  }
-
-  .about__stat-number {
-    font-size: 24px;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
   }
 }

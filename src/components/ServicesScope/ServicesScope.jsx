@@ -4,8 +4,8 @@ import CommercialSolar from '../../assets/images/CommercialSolar.webp';
 import IndustrialSolar from '../../assets/images/IndustrialSolar.webp';
 import RooftopSolar from '../../assets/images/RooftopSolar.webp';
 import LargeScaleSolar from '../../assets/images/LargeScaleSolarFarm.webp';
-import AgriculturalSolar from '../../assets/images/AgriculturalSolarSystem.webp';
-import { FaHome, FaBuilding, FaCheckCircle, FaChartLine, FaRoad, FaTools } from 'react-icons/fa';
+import EVChargingImg from '../../assets/images/EVChargingStation.jpg';
+import { FaHome, FaBuilding, FaCheckCircle, FaChartLine, FaRoad, FaTools, FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const ServicesScope = () => {
@@ -54,7 +54,7 @@ const ServicesScope = () => {
       icon: <FaBuilding />,
       title: 'EV Charging & More',
       description: 'EV charging station installation and inverter repair services in Pune. Complete renewable energy solutions for homes, businesses, and commercial spaces.',
-      image: AgriculturalSolar,
+      image: EVChargingImg,
       imageAlt: 'EV charging station installation and inverter repair Pune',
       link: '/ev-charging'
     }
@@ -77,21 +77,19 @@ const ServicesScope = () => {
               <div className="services-scope__card-image">
                 <img src={service.image} alt={service.imageAlt} loading="lazy" />
                 <div className="services-scope__card-image-overlay"></div>
-                <div className="services-scope__card-icon-wrapper">
-                  <div className="services-scope__card-icon">
-                    {service.icon}
-                  </div>
-                  <h3 className="services-scope__card-title-overlay">{service.title}</h3>
+                <div className="services-scope__card-badge">
+                  {service.icon}
+                  <span>{service.title}</span>
                 </div>
               </div>
               <div className="services-scope__card-content">
+                <h3 className="services-scope__card-heading">
+                  <span className="services-scope__card-heading-icon">{service.icon}</span>
+                  {service.title}
+                </h3>
                 <p className="services-scope__card-description">{service.description}</p>
                 <Link to={service.link} className="services-scope__card-link">
-                  LEARN MORE
-                  <svg viewBox="0 0 24 24" fill="none">
-                    <path d="M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M12 5L19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
+                  LEARN MORE <FaArrowRight />
                 </Link>
               </div>
             </div>
