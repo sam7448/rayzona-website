@@ -47,9 +47,9 @@ const ProductsServices = () => {
         <title>Solar Products &amp; Services | Rayzona Renewable Energy Pune</title>
         <meta name="description" content="Explore Rayzona's solar products and services: residential solar, commercial solar, EV charging stations, solar street lights, and solar maintenance in Pune, Maharashtra." />
         <meta name="keywords" content="solar products Pune, solar street lights, EV charging station Pune, residential solar Maharashtra, commercial solar installation, solar maintenance Pune" />
-        <link rel="canonical" href="https://www.rayzonarenewablesenergy.com/products-services" />
-        <meta property="og:url" content="https://www.rayzonarenewablesenergy.com/products-services" />
-        <meta property="og:title" content="Solar Products & Services | Rayzona Renewable Energy Pune" />
+        <link rel="canonical" href="https://rayzonarenewablesenergy.com/products-services" />
+        <meta property="og:url" content="https://rayzonarenewablesenergy.com/products-services" />
+        <meta property="og:title" content="Solar Products & Services | Rayzona Renewables Energy Pune" />
         <meta property="og:description" content="Explore Rayzona's solar products and services: residential solar, commercial solar, EV charging stations, and solar street lights in Pune." />
       </Helmet>
       <div className="products-services__hero">

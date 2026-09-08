@@ -48,10 +48,10 @@ const Contact = () => {
         <title>Contact Rayzona | Solar Energy Company Pune</title>
         <meta name="description" content="Contact Rayzona Renewable Energy for solar panel installation, maintenance, and EV charging solutions in Pune. Call +91 7448299293 or visit us at Hadapsar, Pune - 411028." />
         <meta name="keywords" content="contact Rayzona Energy, solar company contact Pune, solar installation Hadapsar, solar energy Pune phone number" />
-        <link rel="canonical" href="https://www.rayzonarenewablesenergy.com/contact" />
-        <meta property="og:url" content="https://www.rayzonarenewablesenergy.com/contact" />
-        <meta property="og:title" content="Contact Rayzona | Solar Energy Company Pune" />
-        <meta property="og:description" content="Get in touch with Rayzona Renewable Energy for solar solutions in Pune. Call +91 7448299293 or visit Hadapsar, Pune." />
+        <link rel="canonical" href="https://rayzonarenewablesenergy.com/contact" />
+        <meta property="og:url" content="https://rayzonarenewablesenergy.com/contact" />
+        <meta property="og:title" content="Contact Rayzona Renewables Energy | Solar Energy Company Pune" />
+        <meta property="og:description" content="Get in touch with Rayzona Renewables Energy for solar solutions in Pune. Call +91 7448299293 or visit Hadapsar, Pune." />
       </Helmet>
       <div className="contact-page__hero">
         <div className="contact-page__hero-bg" style={{ backgroundImage: `url(${aboutBg})` }}></div>

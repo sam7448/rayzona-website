@@ -1,4 +1,4 @@
-﻿const ServiceSchema = ({ name, description, url, areaServed = "Pune, Maharashtra" }) => {
+const ServiceSchema = ({ name, description, url, areaServed = "Pune, Maharashtra" }) => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -7,7 +7,7 @@
     "url": url,
     "provider": {
       "@type": "LocalBusiness",
-      "@id": "https://www.rayzonarenewablesenergy.com/#business",
+      "@id": "https://rayzonarenewablesenergy.com/#business",
       "name": "Rayzona Renewables Energy"
     },
     "areaServed": {

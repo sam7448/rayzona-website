@@ -6,7 +6,7 @@ import ApplyNow from '../../components/ApplyNow/ApplyNow';
 import CTA from '../../components/CTA/CTA';
 import './SolarCalculatorPage.css';
 
-const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
+const SITE_URL = 'https://rayzonarenewablesenergy.com';
 
 const calculatorFaqs = [
   {

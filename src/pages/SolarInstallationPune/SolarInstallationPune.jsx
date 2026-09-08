@@ -8,7 +8,7 @@ import { FaSolarPanel, FaHome, FaBuilding, FaIndustry, FaCheckCircle, FaTools, F
 import residentialImg from '../../assets/images/ResidentialSolar.webp';
 import SolarCalculator from '../../components/SolarCalculator/SolarCalculator';
 
-const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
+const SITE_URL = 'https://rayzonarenewablesenergy.com';
 const WHATSAPP = '917448299293';
 
 const SolarInstallationPune = () => {

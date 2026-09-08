@@ -10,10 +10,10 @@ const About = () => {
         <title>About Us | Rayzona Renewable Energy Pune</title>
         <meta name="description" content="Learn about Rayzona Renewable Energy — our mission, vision, and commitment to sustainable solar solutions across Maharashtra. Certified solar experts in Pune." />
         <meta name="keywords" content="about Rayzona Energy, solar company Pune, renewable energy company Maharashtra, solar installation experts" />
-        <link rel="canonical" href="https://www.rayzonarenewablesenergy.com/about" />
-        <meta property="og:url" content="https://www.rayzonarenewablesenergy.com/about" />
-        <meta property="og:title" content="About Us | Rayzona Renewable Energy Pune" />
-        <meta property="og:description" content="Learn about Rayzona Renewable Energy — our mission, vision, and commitment to sustainable solar solutions across Maharashtra." />
+        <link rel="canonical" href="https://rayzonarenewablesenergy.com/about" />
+        <meta property="og:url" content="https://rayzonarenewablesenergy.com/about" />
+        <meta property="og:title" content="About Us | Rayzona Renewables Energy Pune" />
+        <meta property="og:description" content="Learn about Rayzona Renewables Energy — our mission, vision, and commitment to sustainable solar solutions across Maharashtra." />
       </Helmet>
       <div className="about-page__hero">
         <div className="about-page__hero-bg" style={{ backgroundImage: `url(${aboutBg})` }}></div>

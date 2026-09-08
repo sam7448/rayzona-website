@@ -1,11 +1,11 @@
-﻿import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import '../ServicePage.css';
 import BreadcrumbSchema from '../../seo/BreadcrumbSchema';
 import ServiceSchema from '../../seo/ServiceSchema';
 import rooftopImg from '../../assets/images/RooftopSolar.webp';
 
-const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
+const SITE_URL = 'https://rayzonarenewablesenergy.com';
 const WHATSAPP = '917448299293';
 
 const RooftopSolar = () => {

@@ -1,5 +1,5 @@
-﻿const LocalBusinessSchema = () => {
-  const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
+const LocalBusinessSchema = () => {
+  const SITE_URL = 'https://rayzonarenewablesenergy.com';
 
   const schema = {
     "@context": "https://schema.org",

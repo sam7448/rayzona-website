@@ -31,5 +31,5 @@ User-agent: CCBot
 Allow: /
 
 # Sitemaps and AI Knowledge File
-Sitemap: https://www.rayzonarenewablesenergy.com/sitemap.xml
-# LLMs Knowledge Base: https://www.rayzonarenewablesenergy.com/llms.txt
+Sitemap: https://rayzonarenewablesenergy.com/sitemap.xml
+# LLMs Knowledge Base: https://rayzonarenewablesenergy.com/llms.txt

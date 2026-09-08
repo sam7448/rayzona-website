@@ -41,7 +41,7 @@ import LocalBusinessSchema from './seo/LocalBusinessSchema';
 import FAQSchema from './seo/FAQSchema';
 import WebsiteSchema from './seo/WebsiteSchema';
 
-const SITE_URL = 'https://www.rayzonarenewablesenergy.com';
+const SITE_URL = 'https://rayzonarenewablesenergy.com';
 
 const HomePage = () => (
   <>
