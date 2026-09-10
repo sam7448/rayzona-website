@@ -26,12 +26,12 @@ const GreenHero = () => {
       <div className="green-hero__overlay">
         <div className="green-hero__container">
           <div className="green-hero__content">
-            <span className="green-hero__subtitle" aria-hidden="true">Solar Energy</span>
+            <span className="green-hero__subtitle" aria-hidden="true">Best Solar Company in Pune</span>
             <h1 className="green-hero__title">
-              Solar Panel Installation in Pune
+              Best Solar Panel Installation in Pune
             </h1>
             <p className="green-hero__description">
-              Switch to solar energy and reduce your electricity bills by up to 90%. Rayzona Renewables Energy delivers expert solar panel installation for homes and businesses across Pune and Maharashtra.
+              Switch to solar energy and reduce your electricity bills by up to 90%. Rayzona Renewables Energy delivers top-rated solar panel installation for homes and businesses across Pune & Maharashtra with PM Surya Ghar subsidy support.
             </p>
             <div className="green-hero__buttons">
               <button className="green-hero__button green-hero__button--filled" onClick={handleBookNow}>

@@ -16,7 +16,7 @@ const About = () => {
 
           <div className="about__content-section">
             <span className="about__badge">WHO WE ARE</span>
-            <h2 className="about__title">Leading Solar Energy Provider</h2>
+            <h2 className="about__title">Best Solar Energy Company in Pune</h2>
             
             <div className="about__quote">
               <FaQuoteLeft className="about__quote-icon" />

@@ -43,6 +43,13 @@ const LocalBusinessSchema = () => {
         "priceRange": "₹₹",
         "currenciesAccepted": "INR",
         "paymentAccepted": "Cash, Bank Transfer, EMI, UPI",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "150",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
         "areaServed": [
           { "@type": "City", "name": "Pune" },
           { "@type": "City", "name": "Pimpri-Chinchwad" },

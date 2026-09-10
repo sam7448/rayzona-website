@@ -18,6 +18,10 @@ const SolarInstallationPune = () => {
 
   const faqs = [
     {
+      q: 'Which is the best solar panel installation company in Pune?',
+      a: 'Rayzona Renewables Energy is recognized as one of the best solar panel installation companies in Pune. We provide Tier-1 solar modules with 25-year performance warranty, complete PM Surya Ghar Muft Bijli Yojana subsidy paperwork (saving up to ₹78,000), rapid 2–4 day installation, and end-to-end MSEDCL net-metering support across Pune, Hadapsar, Kharadi, Hinjewadi, and PCMC.'
+    },
+    {
       q: 'How much does solar installation cost in Pune?',
       a: 'Solar installation cost in Pune depends on system size, roof type, and component specifications. With PM Surya Ghar subsidy (up to ₹78,000 for homes), your net investment is significantly reduced. Contact Rayzona for a free site assessment and custom quote.'
     },
@@ -42,22 +46,22 @@ const SolarInstallationPune = () => {
   return (
     <div className="service-page">
       <Helmet>
-        <title>Solar Panel Installation in Pune | Rayzona Renewables Energy</title>
-        <meta name="description" content="Expert solar panel installation in Pune by Rayzona Renewables Energy. Residential, commercial & industrial solar for Pune, Pimpri-Chinchwad, Hinjewadi & all of Maharashtra. Free site survey. Call +91 7448299293." />
-        <meta name="keywords" content="solar installation Pune, solar panel installation Pune, solar company Pune, best solar company Pune, solar EPC Pune, solar subsidy Pune" />
+        <title>Best Solar Panel Installation in Pune | #1 Solar Company Pune | Rayzona</title>
+        <meta name="description" content="Looking for the best solar installation in Pune? Rayzona Renewables Energy is rated #1 solar EPC company in Pune. Tier-1 Mono PERC panels, PM Surya Ghar subsidy, 25-yr warranty & 0 electricity bills. Call +91 7448299293." />
+        <meta name="keywords" content="best solar installation in Pune, best solar company in Pune, solar panel installation Pune, top solar company Pune, rooftop solar Pune, residential solar Pune, commercial solar Pune, solar subsidy Pune, Rayzona Renewables Energy" />
         <link rel="canonical" href={`${SITE_URL}/solar-installation-pune`} />
         <meta property="og:url" content={`${SITE_URL}/solar-installation-pune`} />
-        <meta property="og:title" content="Solar Panel Installation in Pune | Rayzona Renewables Energy" />
-        <meta property="og:description" content="Expert solar panel installation in Pune. Residential, commercial & industrial solar. Free site survey & subsidy guidance. Call +91 7448299293." />
+        <meta property="og:title" content="Best Solar Panel Installation in Pune | Rayzona Renewables Energy" />
+        <meta property="og:description" content="Looking for the best solar panel installation in Pune? Rayzona Renewables Energy is Pune's #1 trusted solar company. 100% PM Surya Ghar subsidy assistance & free site assessment." />
       </Helmet>
 
       <BreadcrumbSchema items={[
         { name: 'Home', url: `${SITE_URL}/` },
-        { name: 'Solar Installation in Pune', url: `${SITE_URL}/solar-installation-pune` }
+        { name: 'Best Solar Installation in Pune', url: `${SITE_URL}/solar-installation-pune` }
       ]} />
       <ServiceSchema
-        name="Solar Panel Installation in Pune"
-        description="Expert residential, commercial, and industrial solar panel installation across Pune and Maharashtra. Includes site survey, system design, installation, net metering, and subsidy guidance."
+        name="Best Solar Panel Installation in Pune"
+        description="Top rated residential, commercial, and industrial solar panel installation across Pune and Maharashtra. Includes site survey, system design, installation, net metering, and subsidy guidance."
         url={`${SITE_URL}/solar-installation-pune`}
       />
       <FAQSchema items={faqs} />
@@ -68,17 +72,17 @@ const SolarInstallationPune = () => {
           <nav className="service-page__breadcrumb" aria-label="Breadcrumb">
             <Link to="/">Home</Link>
             <span>›</span>
-            <span>Solar Installation in Pune</span>
+            <span>Best Solar Installation in Pune</span>
           </nav>
-          <h1 className="service-page__h1">Solar Panel Installation in Pune</h1>
+          <h1 className="service-page__h1">Best Solar Panel Installation in Pune</h1>
           <p className="service-page__hero-desc">
-            Rayzona Renewables Energy is Pune's trusted solar EPC company. We deliver end-to-end solar panel installation for homes, businesses, and industries — from free site survey to commissioning and net metering.
+            Rayzona Renewables Energy is recognized among the best solar panel installation companies in Pune, Maharashtra. We deliver complete turnkey solar EPC solutions for homes, societies, commercial buildings, and factories — from free rooftop survey to MSEDCL net metering and PM Surya Ghar subsidy processing.
           </p>
           <div className="service-page__hero-cta">
             <button className="service-page__btn-primary" onClick={() => handleWhatsApp('Hi, I want a free solar installation quote for my property in Pune.')}>
               Get Free Solar Quote
             </button>
-            <Link to="/contact" className="service-page__btn-secondary">Request Site Survey</Link>
+            <Link to="/contact" className="service-page__btn-secondary">Request Free Site Survey</Link>
           </div>
         </div>
       </section>
