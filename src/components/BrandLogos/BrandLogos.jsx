@@ -1,15 +1,15 @@
 import { FaShieldAlt, FaAward, FaCheckCircle, FaBolt, FaSolarPanel } from 'react-icons/fa';
 import './BrandLogos.css';
 
-import tataSolarLogo from '../../assets/brands/tata-solar.svg';
-import adaniSolarLogo from '../../assets/brands/adani-solar.svg';
-import waareeLogo from '../../assets/brands/waaree.svg';
-import vikramSolarLogo from '../../assets/brands/vikram-solar.svg';
-import sungrowLogo from '../../assets/brands/sungrow.svg';
-import growattLogo from '../../assets/brands/growatt.svg';
-import havellsLogo from '../../assets/brands/havells.svg';
-import polycabLogo from '../../assets/brands/polycab.svg';
-import microtekLogo from '../../assets/brands/microtek.svg';
+import tataSolarLogo from '../../assets/brands/tata-solar-official.jpg';
+import adaniSolarLogo from '../../assets/brands/adani-solar-official.png';
+import waareeLogo from '../../assets/brands/waaree-official.png';
+import vikramSolarLogo from '../../assets/brands/vikram-solar-official.png';
+import sungrowLogo from '../../assets/brands/sungrow-official.svg';
+import growattLogo from '../../assets/brands/growatt-official.png';
+import havellsLogo from '../../assets/brands/havells-official.svg';
+import polycabLogo from '../../assets/brands/polycab-official.png';
+import microtekLogo from '../../assets/brands/microtek-official.svg';
 
 const BrandLogos = () => {
   const brands = [

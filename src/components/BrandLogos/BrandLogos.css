@@ -80,18 +80,18 @@
 }
 
 .brand-logos__img-wrapper {
-  height: 48px;
+  height: 54px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 14px;
-  padding: 2px;
+  margin-bottom: 12px;
+  padding: 4px;
 }
 
 .brand-logos__img {
-  max-height: 42px;
-  max-width: 165px;
+  max-height: 46px;
+  max-width: 175px;
   width: auto;
   height: auto;
   object-fit: contain;
