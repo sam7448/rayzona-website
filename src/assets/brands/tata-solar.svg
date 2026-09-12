@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="100%" height="100%">
+  <!-- Tata Iconic T Emblem in Blue -->
+  <g transform="translate(10, 4)">
+    <circle cx="21" cy="21" r="20" fill="none" stroke="#005696" stroke-width="2.5"/>
+    <!-- Stylized T lines -->
+    <path d="M 12 14 L 30 14" stroke="#005696" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 21 14 L 21 31" stroke="#005696" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 15 20 Q 21 24 27 20" fill="none" stroke="#005696" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <!-- Text -->
+  <text x="60" y="24" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="900" fill="#005696" letter-spacing="1">TATA</text>
+  <text x="110" y="24" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#2d3748">POWER</text>
+  <text x="60" y="39" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="800" fill="#2e7d32" letter-spacing="2">SOLAR</text>
+</svg>

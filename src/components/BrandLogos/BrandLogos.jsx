@@ -1,17 +1,27 @@
 import { FaShieldAlt, FaAward, FaCheckCircle, FaBolt, FaSolarPanel } from 'react-icons/fa';
 import './BrandLogos.css';
 
+import tataSolarLogo from '../../assets/brands/tata-solar.svg';
+import adaniSolarLogo from '../../assets/brands/adani-solar.svg';
+import waareeLogo from '../../assets/brands/waaree.svg';
+import vikramSolarLogo from '../../assets/brands/vikram-solar.svg';
+import sungrowLogo from '../../assets/brands/sungrow.svg';
+import growattLogo from '../../assets/brands/growatt.svg';
+import havellsLogo from '../../assets/brands/havells.svg';
+import polycabLogo from '../../assets/brands/polycab.svg';
+import microtekLogo from '../../assets/brands/microtek.svg';
+
 const BrandLogos = () => {
   const brands = [
-    { name: 'Tata Power Solar', category: 'Tier-1 Mono PERC Panels' },
-    { name: 'Adani Solar', category: 'High-Efficiency Modules' },
-    { name: 'Waaree Energies', category: 'TopCon Solar Panels' },
-    { name: 'Vikram Solar', category: 'High-Wattage Panels' },
-    { name: 'Sungrow', category: 'Smart Grid Inverters' },
-    { name: 'Growatt', category: 'On-Grid & Hybrid Inverters' },
-    { name: 'Havells Solar', category: 'Certified Inverters' },
-    { name: 'Polycab Solar', category: 'Solar Cables & Inverters' },
-    { name: 'Microtek', category: 'Grid-Tied Systems' }
+    { name: 'Tata Power Solar', category: 'Tier-1 Mono PERC Panels', logo: tataSolarLogo },
+    { name: 'Adani Solar', category: 'High-Efficiency Modules', logo: adaniSolarLogo },
+    { name: 'Waaree Energies', category: 'TopCon Solar Panels', logo: waareeLogo },
+    { name: 'Vikram Solar', category: 'High-Wattage Panels', logo: vikramSolarLogo },
+    { name: 'Sungrow', category: 'Smart Grid Inverters', logo: sungrowLogo },
+    { name: 'Growatt', category: 'On-Grid & Hybrid Inverters', logo: growattLogo },
+    { name: 'Havells Solar', category: 'Certified Inverters', logo: havellsLogo },
+    { name: 'Polycab Solar', category: 'Solar Cables & Inverters', logo: polycabLogo },
+    { name: 'Microtek', category: 'Grid-Tied Systems', logo: microtekLogo }
   ];
 
   const certifications = [
@@ -41,6 +51,9 @@ const BrandLogos = () => {
         <div className="brand-logos__grid">
           {brands.map((b, i) => (
             <div key={i} className="brand-logos__card">
+              <div className="brand-logos__img-wrapper">
+                <img src={b.logo} alt={`${b.name} Logo`} className="brand-logos__img" loading="lazy" width="160" height="44" />
+              </div>
               <span className="brand-logos__brand-name">{b.name}</span>
               <span className="brand-logos__brand-cat">{b.category}</span>
             </div>

@@ -59,27 +59,51 @@
 }
 
 .brand-logos__card {
-  background: #f8fafc;
+  background: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 14px;
-  padding: 20px;
+  border-radius: 16px;
+  padding: 22px 18px 18px 18px;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.03);
 }
 
 .brand-logos__card:hover {
   background: #ffffff;
-  border-color: #a5d6a7;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.08);
+  border-color: #86efac;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(34, 197, 94, 0.12);
+}
+
+.brand-logos__img-wrapper {
+  height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  padding: 2px;
+}
+
+.brand-logos__img {
+  max-height: 42px;
+  max-width: 165px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.brand-logos__card:hover .brand-logos__img {
+  transform: scale(1.05);
 }
 
 .brand-logos__brand-name {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 800;
   color: #1e293b;
   margin-bottom: 4px;
@@ -89,7 +113,7 @@
 .brand-logos__brand-cat {
   font-size: 12px;
   color: #64748b;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Certifications Grid */
