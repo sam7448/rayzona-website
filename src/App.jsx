@@ -47,18 +47,18 @@ const SITE_URL = 'https://rayzonarenewablesenergy.com';
 const HomePage = () => (
   <>
     <Helmet>
-      <title>Rayzona Renewables Energy | Solar Panel Installation in Pune</title>
-      <meta name="description" content="Rayzona Renewables Energy — expert solar panel installation in Pune for homes, businesses & industries. Residential & commercial rooftop solar, EV charging & maintenance. Free site survey. Call +91 7448299293." />
-      <meta name="keywords" content="solar panel installation Pune, solar company Pune, best solar company Pune, rooftop solar Pune, residential solar Pune, commercial solar Pune, solar EPC Pune, solar subsidy Pune, PM Surya Ghar Pune" />
+      <title>Best Solar Panel Installation in Pune | #1 Solar Company | Rayzona</title>
+      <meta name="description" content="Rayzona Renewables Energy is Pune's #1 trusted solar company. Residential & commercial rooftop solar panel installation, PM Surya Ghar subsidy up to ₹78,000 & 90% bill savings. Free survey: +91 7448299293." />
+      <meta name="keywords" content="best solar panel installation in Pune, best solar company in Pune, solar panel price in Pune, solar panel dealers in Pune, rooftop solar Pune, solar company near me, solar panel installation near me, PM Surya Ghar Muft Bijli Yojana Pune, solar subsidy in Maharashtra, residential solar Pune, commercial solar rooftop Pune, 3kw solar system price in Pune, solar system for home Pune, solar panels Hadapsar, Kharadi solar, Hinjewadi solar, Wakad solar, Baner solar, Rayzona Renewables Energy" />
       <link rel="canonical" href={`${SITE_URL}/`} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={`${SITE_URL}/`} />
       <meta property="og:site_name" content="Rayzona Renewables Energy" />
-      <meta property="og:title" content="Rayzona Renewables Energy | Solar Panel Installation in Pune" />
+      <meta property="og:title" content="Best Solar Panel Installation in Pune | Rayzona Renewables Energy" />
       <meta property="og:description" content="Expert solar panel installation in Pune for homes & businesses. Reduce bills by 90%. Free site survey. Call +91 7448299293." />
       <meta property="og:image" content={`${SITE_URL}/og-image.jpg`} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Rayzona Renewables Energy | Solar Panel Installation in Pune" />
+      <meta name="twitter:title" content="Best Solar Panel Installation in Pune | Rayzona Renewables Energy" />
       <meta name="twitter:description" content="Expert solar panel installation in Pune for homes & businesses. Reduce bills by 90%. Call +91 7448299293." />
       <meta name="twitter:image" content={`${SITE_URL}/og-image.jpg`} />
     </Helmet>

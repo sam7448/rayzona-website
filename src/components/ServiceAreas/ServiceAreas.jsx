@@ -1,11 +1,12 @@
-﻿import './ServiceAreas.css';
+import './ServiceAreas.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const areas = [
   'Hadapsar', 'Viman Nagar', 'Kharadi', 'Hinjewadi', 'Wakad',
   'Baner', 'Balewadi', 'Kothrud', 'Aundh', 'Bavdhan',
-  'Pimple Saudagar', 'Pimpri-Chinchwad', 'Chinchwad', 'Bhosari', 'Moshi', 'Talegaon'
+  'Magarpatta', 'Wagholi', 'Fursungi', 'Kondhwa', 'Undri',
+  'Pimple Saudagar', 'Pimpri-Chinchwad', 'Chinchwad', 'Bhosari', 'Moshi', 'Ravet', 'Chakan', 'Talegaon'
 ];
 
 const ServiceAreas = () => {

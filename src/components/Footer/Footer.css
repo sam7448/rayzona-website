@@ -173,6 +173,55 @@
 }
 
 /* ══════════════════════════════════
+   Popular Solar Keywords (Local SEO)
+══════════════════════════════════ */
+.footer__keywords {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.footer__keywords-title {
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 0.6rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.footer__keywords-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.5rem;
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.footer__keywords-links a {
+  color: #444;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer__keywords-links a:hover {
+  color: #1B8652;
+  text-decoration: underline;
+}
+
+.footer__keywords-links span {
+  color: #777;
+}
+
+.footer__keywords-sep {
+  color: #bbb;
+  font-size: 0.75rem;
+  user-select: none;
+}
+
+/* ══════════════════════════════════
    RESPONSIVE — Tablet (≤1024px)
 ══════════════════════════════════ */
 @media (max-width: 1024px) {

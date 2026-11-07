@@ -1,32 +1,28 @@
 const FAQSchema = ({ items }) => {
   const defaultFaqs = [
     {
-      question: 'What partner models does Rayzona provide?',
-      answer: 'Rayzona provides Distributor, Master Distributor and Channel Partner Franchise models. The Distributor model is the basic model, the Master Distributor model is the bigger growth model, and the Channel Partner Franchise model is the premium franchise-style model.'
+      question: 'Which is the best solar panel installation company in Pune?',
+      answer: 'Rayzona Renewables Energy is rated among the best solar panel installation companies in Pune. We provide Tier-1 solar modules with 25-year warranty, complete PM Surya Ghar Muft Bijli Yojana subsidy paperwork (saving up to ₹78,000), quick 2-4 day installation, and end-to-end MSEDCL net metering across Pune, Hadapsar, Kharadi, Hinjewadi, and PCMC.'
     },
     {
-      question: 'Can I include Digital AI with any partner model?',
-      answer: 'Yes, every model can be discussed with Digital AI. You can choose Distributor + Digital AI, Master Distributor + Digital AI or Channel Partner Franchise + Digital AI depending on your business requirement.'
+      question: 'How much does solar panel installation cost in Pune with PM Surya Ghar subsidy?',
+      answer: 'Solar panel installation cost in Pune depends on system size (1 kW, 2 kW, 3 kW to 10 kW). Under the PM Surya Ghar Muft Bijli Yojana, residential consumers receive direct central subsidy up to ₹78,000, bringing down the net cost drastically. Contact Rayzona for a free site assessment and customized quote.'
     },
     {
-      question: 'What solar categories can partners deal in?',
-      answer: 'Partners can deal in on-grid, off-grid and hybrid solar systems. These categories cover residential, commercial, industrial and special backup requirements.'
+      question: 'How much can I save on electricity bills by installing solar in Pune?',
+      answer: 'A rooftop solar system from Rayzona Renewables Energy reduces monthly MSEDCL electricity bills by up to 80% to 90%. Most homeowners and commercial businesses in Pune recover their initial solar investment within 3 to 5 years and enjoy free power for over 20 years.'
     },
     {
-      question: 'Do I need prior solar experience to become a partner?',
-      answer: 'Solar experience is helpful but not always mandatory. Business seriousness, local network, sales discipline and willingness to learn are important. Existing electrical, inverter, battery, construction, contractor and sales businesses can be a good fit.'
+      question: 'How does MSEDCL net metering work for rooftop solar in Maharashtra?',
+      answer: 'With an on-grid rooftop solar system, excess power generated during the day is sent back to the MSEDCL grid via a bi-directional net meter. At the end of the billing cycle, MSEDCL credits your units, resulting in near-zero electricity bills. Rayzona handles the complete MSEDCL application and meter testing process.'
     },
     {
-      question: 'What kind of income can I expect as a Rayzona partner?',
-      answer: 'Income depends on partner effort, market demand, customer trust, lead quality, pricing, execution and local competition. Rayzona provides business structure and support, but results depend on real market performance.'
+      question: 'What areas in Pune does Rayzona Renewables Energy serve?',
+      answer: 'Rayzona provides complete solar panel installation across all Pune areas including Hadapsar, Kharadi, Viman Nagar, Hinjewadi, Wakad, Baner, Kothrud, Magarpatta, Wagholi, Bhosari, Chakan, Moshi, and Pimpri-Chinchwad.'
     },
     {
-      question: 'What is the onboarding process for new partners?',
-      answer: 'The onboarding process includes: Submit application → Discussion of models → Model selection → Training on systems and processes → Digital AI setup (if chosen) → Market launch with local sales support.'
-    },
-    {
-      question: 'What kind of support do partners receive?',
-      answer: 'Partners receive support for product understanding, customer pitching, project and quotation guidance, net metering process, installation workflow, maintenance support, and business automation through Digital AI tools.'
+      question: 'How long does a residential solar installation take in Pune?',
+      answer: 'A residential solar installation by Rayzona typically takes 2 to 4 days from structural mounting to electrical wiring, followed by rapid coordination with MSEDCL for net metering commissioning.'
     }
   ];
 

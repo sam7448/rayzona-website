@@ -78,6 +78,40 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Popular Solar Searches in Pune */}
+        <div className="footer__keywords">
+          <p className="footer__keywords-title">Popular Solar Searches in Pune:</p>
+          <div className="footer__keywords-links">
+            <Link to="/solar-installation-pune">Best Solar Panel Installation in Pune</Link>
+            <span className="footer__keywords-sep">•</span>
+            <Link to="/solar-installation-pune">Solar Company in Pune</Link>
+            <span className="footer__keywords-sep">•</span>
+            <Link to="/solar-calculator">PM Surya Ghar Subsidy Pune</Link>
+            <span className="footer__keywords-sep">•</span>
+            <Link to="/solar-calculator">Solar Panel Price in Pune</Link>
+            <span className="footer__keywords-sep">•</span>
+            <Link to="/residential-solar">Residential Rooftop Solar for Home</Link>
+            <span className="footer__keywords-sep">•</span>
+            <Link to="/commercial-solar">Commercial & Industrial Solar Pune</Link>
+            <span className="footer__keywords-sep">•</span>
+            <Link to="/on-grid-solar">On-Grid Solar System MSEDCL</Link>
+            <span className="footer__keywords-sep">•</span>
+            <Link to="/solar-maintenance">Solar Panel Cleaning & Maintenance</Link>
+            <span className="footer__keywords-sep">•</span>
+            <span>Solar Panels in Hadapsar</span>
+            <span className="footer__keywords-sep">•</span>
+            <span>Solar Installation Kharadi</span>
+            <span className="footer__keywords-sep">•</span>
+            <span>Rooftop Solar Hinjewadi</span>
+            <span className="footer__keywords-sep">•</span>
+            <span>Solar Dealers Wakad</span>
+            <span className="footer__keywords-sep">•</span>
+            <span>Solar Power System Kothrud</span>
+            <span className="footer__keywords-sep">•</span>
+            <span>Tata & Adani Solar Panels Pune</span>
+          </div>
+        </div>
+
         <div className="footer__bottom">
           <p className="footer__copyright">
             © 2025 Rayzona Renewables Energy. All rights reserved. | Solar Panel Installation in Pune
